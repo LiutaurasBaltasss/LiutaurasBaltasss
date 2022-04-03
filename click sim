@@ -1,1211 +1,779 @@
--- Gui to Lua
--- Version: 3.2
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
--- Instances:
+local Window = Library.CreateLib("⚡Clicker Simulator!⚡ made by Lagun", "DarkTheme")
+local Tab = Window:NewTab("Autofarm")
+local Section = Tab:NewSection("AutoClicker")
+Section:NewToggle("Fast auto clicker", "ToggleInfo", function(state)
+	if state then
+		getgenv().sds46 = true;
 
-local ScreenGui = Instance.new("ScreenGui")
-local KeyFrame = Instance.new("Frame")
-local title = Instance.new("TextLabel")
-local Check = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local TextBox = Instance.new("TextBox")
-local ImageLabel = Instance.new("ImageLabel")
-local key = Instance.new("TextBox")
-local UICorner_2 = Instance.new("UICorner")
-local exc = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-
---Properties:
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-KeyFrame.Name = "KeyFrame"
-KeyFrame.Parent = ScreenGui
-KeyFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-KeyFrame.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
-KeyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-KeyFrame.BorderSizePixel = 5
-KeyFrame.Position = UDim2.new(0.397538573, 0, 0.60927093, 0)
-KeyFrame.Size = UDim2.new(0, 545, 0, 378)
-
-title.Name = "title"
-title.Parent = KeyFrame
-title.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
-title.BorderColor3 = Color3.fromRGB(86, 86, 86)
-title.Position = UDim2.new(0, 0, 0.0759833977, 0)
-title.Size = UDim2.new(0, 545, 0, 65)
-title.Font = Enum.Font.GothamBold
-title.Text = "Lagun Scripts"
-title.TextColor3 = Color3.fromRGB(0, 0, 0)
-title.TextSize = 80.000
-title.TextWrapped = true
-
-Check.Name = "Check"
-Check.Parent = KeyFrame
-Check.BackgroundColor3 = Color3.fromRGB(52, 52, 54)
-Check.Position = UDim2.new(0.315596342, 0, 0.814814806, 0)
-Check.Size = UDim2.new(0, 200, 0, 50)
-Check.Font = Enum.Font.GothamBold
-Check.Text = "Check"
-Check.TextColor3 = Color3.fromRGB(0, 0, 0)
-Check.TextSize = 30.000
-
-UICorner.Parent = Check
-
-TextLabel.Parent = KeyFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
-TextLabel.BorderColor3 = Color3.fromRGB(86, 86, 86)
-TextLabel.Position = UDim2.new(0.330275208, 0, 0.383597881, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 23)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "Get Key at :"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
-
-TextBox.Parent = KeyFrame
-TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.BackgroundTransparency = 1.000
-TextBox.Position = UDim2.new(0.240366966, 0, 0.428571433, 0)
-TextBox.Size = UDim2.new(0, 306, 0, 34)
-TextBox.ClearTextOnFocus = false
-TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = "https://discord.gg/BbCZbaPTGp"
-TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.TextScaled = true
-TextBox.TextSize = 14.000
-TextBox.TextWrapped = true
-
-ImageLabel.Parent = KeyFrame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.Position = UDim2.new(0.822018445, 0, 0.791005313, 0)
-ImageLabel.Size = UDim2.new(0, 107, 0, 95)
-ImageLabel.Image = "rbxassetid://9265371548"
-
-key.Name = "key"
-key.Parent = KeyFrame
-key.BackgroundColor3 = Color3.fromRGB(34, 34, 36)
-key.Position = UDim2.new(0.146788985, 0, 0.52116394, 0)
-key.Size = UDim2.new(0, 401, 0, 66)
-key.Font = Enum.Font.GothamBold
-key.PlaceholderText = "[Insert Key Here]"
-key.Text = ""
-key.TextColor3 = Color3.fromRGB(0, 0, 0)
-key.TextSize = 50.000
-
-UICorner_2.Parent = key
-
-exc.Name = "exc"
-exc.Parent = ScreenGui
-exc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-exc.Position = UDim2.new(0.238317758, 0, 0.0607210621, 0)
-exc.Size = UDim2.new(0, 311, 0, 148)
-exc.Visible = false
-
-TextButton.Parent = exc
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.Position = UDim2.new(0.093247585, 0, 0.256756753, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
-
--- Scripts:
-
-local function GMXEJZK_fake_script() -- title.Put inside Part with PointLight 
-	local script = Instance.new('Script', title)
-
-	--Rainbow Light Color Changer by Lolygue
-	
-	--It's simpler to make a light color changer than you think
-	--If you want to learn how to make one then make sure to read these comments!
-	
-	-- Variable Definition: 「Basically it helps quickly get to a certain object by defining it as a variable. Think of it like shortcuts on your PC」
-	
-	
-	-- The Color changer: 「Here we have a line that gets the defined variable and changes it's color to red.」
-	-- The Color Code: 「There are three main colors: Red, Green, and Blue. (1,0,0) = Red, (0,1,0) = Green, (0,0,1) = Blue.」
-	
-	-- Hi, Hi, Hi, Hi, Hi-: 「This while true do will loop this part of the script forever」
-	while true do
-		script.Parent.TextColor3 = Color3.new(1,0,0)
-		-- Patience: 「The line below has the script wait for half a second before continuing」
-		wait(0.5)
-		-- Decimals: 「Decimals can also be put in, here we are going to mix a bit of Green with Red to make Orange」
-		script.Parent.TextColor3 = Color3.new(1, 0.75, 0)
-		wait(0.5)
-		-- Know your colors?: 「What comes after Orange in the rainbow? Yellow!」
-		script.Parent.TextColor3 = Color3.new(1,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0.75,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0.75)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0.75,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0,1)
-		wait(0.5)
-		-- Returning to square one: 「And now it is time to cycle back to red」
-		script.Parent.TextColor3 = Color3.new(0.75,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,0.75)
-		wait(0.5)
-		-- Another tale Begins: 「Because of the while true do, after this end, it goes back to the top!」
-	end
-end
-coroutine.wrap(GMXEJZK_fake_script)()
-local function WVHOBH_fake_script() -- Check.Put inside Part with PointLight 
-	local script = Instance.new('Script', Check)
-
-	--Rainbow Light Color Changer by Lolygue
-	
-	--It's simpler to make a light color changer than you think
-	--If you want to learn how to make one then make sure to read these comments!
-	
-	-- Variable Definition: 「Basically it helps quickly get to a certain object by defining it as a variable. Think of it like shortcuts on your PC」
-	
-	
-	-- The Color changer: 「Here we have a line that gets the defined variable and changes it's color to red.」
-	-- The Color Code: 「There are three main colors: Red, Green, and Blue. (1,0,0) = Red, (0,1,0) = Green, (0,0,1) = Blue.」
-	
-	-- Hi, Hi, Hi, Hi, Hi-: 「This while true do will loop this part of the script forever」
-	while true do
-		script.Parent.TextColor3 = Color3.new(1,0,0)
-		-- Patience: 「The line below has the script wait for half a second before continuing」
-		wait(0.5)
-		-- Decimals: 「Decimals can also be put in, here we are going to mix a bit of Green with Red to make Orange」
-		script.Parent.TextColor3 = Color3.new(1, 0.75, 0)
-		wait(0.5)
-		-- Know your colors?: 「What comes after Orange in the rainbow? Yellow!」
-		script.Parent.TextColor3 = Color3.new(1,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0.75,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0.75)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0.75,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0,1)
-		wait(0.5)
-		-- Returning to square one: 「And now it is time to cycle back to red」
-		script.Parent.TextColor3 = Color3.new(0.75,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,0.75)
-		wait(0.5)
-		-- Another tale Begins: 「Because of the while true do, after this end, it goes back to the top!」
-	end
-end
-coroutine.wrap(WVHOBH_fake_script)()
-local function TRCWFY_fake_script() -- Check.login 
-	local script = Instance.new('LocalScript', Check)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		if script.Parent.Parent.key.Text == "Neringa@1"
-			or script.Parent.Parent.key.Text == "Aqrew@1a" then
-			script.Parent.Parent.Visible = false
-			script.Parent.Parent.Parent.KeyFrame.Visible = false
-			script.Parent.Parent.Parent.exc.Visible = false
-			game.StarterGui:SetCore("SendNotification", {Title="LagunScripts"; Text="Correct Key !"; Duration=3;})
-			local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-	
-			local Window = Library.CreateLib("⚡Clicker Simulator!⚡ made by Lagun", "DarkTheme")
-			local Tab = Window:NewTab("Autofarm")
-			local Section = Tab:NewSection("AutoClicker")
-			Section:NewToggle("Fast auto clicker", "ToggleInfo", function(state)
-				if state then
-					getgenv().sds46 = true;
-	
-					while wait() do
-						if getgenv().sds46 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.slowAutoClickerActivate:Fire()
-							game:GetService("ReplicatedStorage").Bindable.Client.slowAutoClickerActivate:Fire()
-						end
-					end
-				else
-					getgenv().sds46 = false;
-				end
-			end)
-	
-			local Section = Tab:NewSection("AutoRebirth")
-			Section:NewToggle("1Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB1 = true;
-	
-					while wait() do
-						if getgenv().RB1 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1, false, false)
-						end
-					end
-				else
-					getgenv().RB1 = false;
-				end
-			end)
-			Section:NewToggle("5Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB5 = true;
-	
-					while wait() do
-						if getgenv().RB5 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5, false, false)
-						end
-					end
-				else
-					getgenv().RB5 = false;
-				end
-			end)
-			Section:NewToggle("10Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB10 = true;
-	
-					while wait() do
-						if getgenv().RB10 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(10, false, false)
-						end
-					end
-				else
-					getgenv().RB10 = false;
-				end
-			end)
-			Section:NewToggle("50Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB50 = true;
-	
-					while wait() do
-						if getgenv().RB50 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50, false, false)
-						end
-					end
-				else
-					getgenv().RB50 = false;
-				end
-			end)
-			Section:NewToggle("250Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB250 = true;
-	
-					while wait() do
-						if getgenv().RB250 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(250, false, false)
-						end
-					end
-				else
-					getgenv().RB250 = false;
-				end
-			end)
-			Section:NewToggle("1K Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB1000 = true;
-	
-					while wait() do
-						if getgenv().RB1000 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1000, false, false)
-						end
-					end
-				else
-					getgenv().RB1000 = false;
-				end
-			end)
-			Section:NewToggle("5K Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB5000 = true;
-	
-					while wait() do
-						if getgenv().RB5000 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5000, false, false)
-						end
-					end
-				else
-					getgenv().RB5000 = false;
-				end
-			end)
-			Section:NewToggle("25K Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB25000 = true;
-	
-					while wait() do
-						if getgenv().RB25000 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(25000, false, false)
-						end
-					end
-				else
-					getgenv().RB25000 = false;
-				end
-			end)
-			Section:NewToggle("125K Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB12500 = true;
-	
-					while wait() do
-						if getgenv().RB12500 == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(12500, false, false)
-						end
-					end
-				else
-					getgenv().RB12500 = false;
-				end
-			end)
-			Section:NewToggle("500K Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB500K = true;
-	
-					while wait() do
-						if getgenv().RB500K == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(500000, false, false)
-						end
-					end
-				else
-					getgenv().RB500K = false;
-				end
-			end)
-			Section:NewToggle("3M Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB3M = true;
-	
-					while wait() do
-						if getgenv().RB3M == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(3000000, false, false)
-						end
-					end
-				else
-					getgenv().RB3M = false;
-				end
-			end)
-			Section:NewToggle("15M Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB15M = true;
-	
-					while wait() do
-						if getgenv().RB15M == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(15000000, false, false)
-						end
-					end
-				else
-					getgenv().RB15M = false;
-				end
-			end)
-			Section:NewToggle("50M Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB50M = true;
-	
-					while wait() do
-						if getgenv().RB50M == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50000000, false, false)
-						end
-					end
-				else
-					getgenv().RB50M = false;
-				end
-			end)
-			Section:NewToggle("250M Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB250M = true;
-	
-					while wait() do
-						if getgenv().RB250M == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(250000000, false, false)
-						end
-					end
-				else
-					getgenv().RB250M = false;
-				end
-			end)
-			Section:NewToggle("1B Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB1B = true;
-	
-					while wait() do
-						if getgenv().RB1B == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB1B = false;
-				end
-			end)
-			Section:NewToggle("5B Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB5B = true;
-	
-					while wait() do
-						if getgenv().RB5B == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB5B = false;
-				end
-			end)
-			Section:NewToggle("25B Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB25B = true;
-	
-					while wait() do
-						if getgenv().RB25B == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(25000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB25B = false;
-				end
-			end)
-			Section:NewToggle("750B Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB750B = true;
-	
-					while wait() do
-						if getgenv().RB750B == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(750000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB750B = false;
-				end
-			end)
-			Section:NewToggle("3.5T Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB3T = true;
-	
-					while wait() do
-						if getgenv().RB3T == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(3500000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB3T = false;
-				end
-			end)
-			Section:NewToggle("20T Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB20T = true;
-	
-					while wait() do
-						if getgenv().RB20T == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(20000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB20T = false;
-				end
-			end)
-			Section:NewToggle("100T Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB100T = true;
-	
-					while wait() do
-						if getgenv().RB100T == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(100000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB100T = false;
-				end
-			end)
-			Section:NewToggle("500T Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB500T = true;
-	
-					while wait() do
-						if getgenv().RB500T == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(500000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB500T = false;
-				end
-			end)
-			Section:NewToggle("15QA Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB15QA = true;
-	
-					while wait() do
-						if getgenv().RB15QA == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1500000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB15QA = false;
-				end
-			end)
-			Section:NewToggle("75QA Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB75QA = true;
-	
-					while wait() do
-						if getgenv().RB75QA == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(7500000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB75QA = false;
-				end
-			end)
-			Section:NewToggle("375QA Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB375QA = true;
-	
-					while wait() do
-						if getgenv().RB375QA == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(37500000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB375QA = false;
-				end
-			end)
-			Section:NewToggle("2.5QI Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB25QI = true;
-	
-					while wait() do
-						if getgenv().RB25QI == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2500000000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB25QI = false;
-				end
-			end)
-			Section:NewToggle("15QI Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB15QI = true;
-	
-					while wait() do
-						if getgenv().RB15QI == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(15000000000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB15QI = false;
-				end
-			end)
-			Section:NewToggle("75QI Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB75QI = true;
-	
-					while wait() do
-						if getgenv().RB75QI == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(75000000000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB75QI = false;
-				end
-			end)
-			Section:NewToggle("375QI Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB375QI = true;
-	
-					while wait() do
-						if getgenv().RB375QI == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(375000000000000000000, false, false)
-						end
-					end
-				else
-					getgenv().RB375QI = false;
-				end
-			end)
-			Section:NewToggle("2SX Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB2SX = true;
-	
-					while wait() do
-						if getgenv().RB2SX == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.e+21, false, false)
-						end
-					end
-				else
-					getgenv().RB2SX = false;
-				end
-			end)
-			Section:NewToggle("50SX Rebirth", "ToggleInfo", function(state)
-				if state then
-					getgenv().RB50SX = true;
-	
-					while wait() do
-						if getgenv().RB50SX == true then
-							game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50.e+21, false, false)
-						end
-					end
-				else
-					getgenv().RB50SX = false;
-				end
-			end)
-			local Tab = Window:NewTab("Auto Open Egs")
-			local Section = Tab:NewSection("Normal World")
-			Section:NewToggle("Frozen Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg1 = true;
-	
-					while wait() do
-						if getgenv().Egg1 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Frozen Arctic"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 4, ["detector"] = game:GetService("Workspace").Eggs["Frozen Arctic"].Detector.Detector, ["Island"] = "Ice", ["eggName"] = "Frozen Arctic", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 25000000 }, false)
-						end
-					end
-				else
-					getgenv().Egg1 = false;
-				end
-			end)
-			Section:NewToggle("Lava dragon Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg2 = true;
-	
-					while wait() do
-						if getgenv().Egg2 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Lava Dragon"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 5, ["detector"] = game:GetService("Workspace").Eggs["Lava Dragon"].Detector.Detector, ["Island"] = "Lava", ["eggName"] = "Lava Dragon", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2000000000 }, false)
-						end
-					end
-				else
-					getgenv().Egg2 = false;
-				end
-			end)
-			Section:NewToggle("Treasure Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg3 = true;
-	
-					while wait() do
-						if getgenv().Egg3 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treasure, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 6, ["detector"] = game:GetService("Workspace").Eggs.Treasure.Detector.Detector, ["Island"] = "Pirate", ["eggName"] = "Treasure", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 65000000000 }, false)
-						end
-					end
-				else
-					getgenv().Egg3 = false;
-				end
-			end)
-			Section:NewToggle("Space Guardian Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg4 = true;
-	
-					while wait() do
-						if getgenv().Egg4 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Space Guardian"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 7, ["detector"] = game:GetService("Workspace").Eggs["Space Guardian"].Detector.Detector, ["Island"] = "Space", ["eggName"] = "Space Guardian", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3750000000000 }, false)
-						end
-					end
-				else
-					getgenv().Egg4 = false;
-				end
-			end)
-			Section:NewToggle("Treeland Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg5 = true;
-	
-					while wait() do
-						if getgenv().Egg5 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treeland, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 8, ["detector"] = game:GetService("Workspace").Eggs.Treeland.Detector.Detector, ["Island"] = "Forest", ["eggName"] = "Treeland", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 100000000000000 }, false)
-						end
-					end
-				else
-					getgenv().Egg5 = false;
-				end
-			end)
-			Section:NewToggle("Ice Cream Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg6 = true;
-	
-					while wait() do
-						if getgenv().Egg6 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Cream"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 9, ["detector"] = game:GetService("Workspace").Eggs["Ice Cream"].Detector.Detector, ["Island"] = "Candyland", ["eggName"] = "Ice Cream", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1900000000000000 }, false)
-						end
-					end
-				else
-					getgenv().Egg6 = false;
-				end
-			end)
-			Section:NewToggle("Atlantis Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg7 = true;
-	
-					while wait() do
-						if getgenv().Egg7 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Atlantis, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 10, ["detector"] = game:GetService("Workspace").Eggs.Atlantis.Detector.Detector, ["Island"] = "Atlantis", ["eggName"] = "Atlantis", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 62000000000000000 }, false)
-						end
-					end
-				else
-					getgenv().Egg7 = false;
-				end
-			end)
-			Section:NewToggle("Tropical Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg8 = true;
-	
-					while wait() do
-						if getgenv().Egg8 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
-						end
-					end
-				else
-					getgenv().Egg8 = false;
-				end
-			end)
-			Section:NewToggle("Tropical Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg9 = true;
-	
-					while wait() do
-						if getgenv().Egg9 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
-						end
-					end
-				else
-					getgenv().Egg9 = false;
-				end
-			end)
-			Section:NewToggle("Galaxy Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg10 = true;
-	
-					while wait() do
-						if getgenv().Egg10 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Galaxy, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 13, ["detector"] = game:GetService("Workspace").Eggs.Galaxy.Detector.Detector, ["Island"] = "Galaxy", ["eggName"] = "Galaxy", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.3e+26 }, false)
-						end
-					end
-				else
-					getgenv().Egg10 = false;
-				end
-			end)
-			local Section = Tab:NewSection("Tech World")
-			Section:NewToggle("Tech Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg11 = true;
-	
-					while wait() do
-						if getgenv().Egg11 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tech, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 14, ["detector"] = game:GetService("Workspace").Eggs.Tech.Detector.Detector, ["Island"] = "techWorld", ["eggName"] = "Tech", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 4.e+31 }, false)
-						end
-					end
-				else
-					getgenv().Egg11 = false;
-				end
-			end)
-			Section:NewToggle("Robot Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg12 = true;
-	
-					while wait() do
-						if getgenv().Egg12 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Robot, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 15, ["detector"] = game:GetService("Workspace").Eggs.Robot.Detector.Detector, ["Island"] = "Robot", ["eggName"] = "Robot", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+32 }, false)
-						end
-					end
-				else
-					getgenv().Egg12 = false;
-				end
-			end)
-			Section:NewToggle("Chemical Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg13 = true;
-	
-					while wait() do
-						if getgenv().Egg13 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Chemical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 16, ["detector"] = game:GetService("Workspace").Eggs.Chemical.Detector.Detector, ["Island"] = "Chemical", ["eggName"] = "Chemical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+35 }, false)
-						end
-					end
-				else
-					getgenv().Egg13 = false;
-				end
-			end)
-			Section:NewToggle("Steampunk Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg14 = true;
-	
-					while wait() do
-						if getgenv().Egg14 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Steampunk, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 17, ["detector"] = game:GetService("Workspace").Eggs.Steampunk.Detector.Detector, ["Island"] = "Steampunk", ["eggName"] = "Steampunk", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+37 }, false)
-						end
-					end
-				else
-					getgenv().Egg14 = false;
-				end
-			end)
-			Section:NewToggle("Holographic Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg15 = true;
-	
-					while wait() do
-						if getgenv().Egg15 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Holographic, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 18, ["detector"] = game:GetService("Workspace").Eggs.Holographic.Detector.Detector, ["Island"] = "Holographic", ["eggName"] = "Holographic", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+40 }, false)
-						end
-					end
-				else
-					getgenv().Egg15 = false;
-				end
-			end)
-			Section:NewToggle("Music Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg16 = true;
-	
-					while wait() do
-						if getgenv().Egg16 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Music, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 19, ["detector"] = game:GetService("Workspace").Eggs.Music.Detector.Detector, ["Island"] = "Music", ["eggName"] = "Music", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+42 }, false)
-						end
-					end
-				else
-					getgenv().Egg16 = false;
-				end
-			end)
-			Section:NewToggle("Hacker Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg17 = true;
-	
-					while wait() do
-						if getgenv().Egg17 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Hacker, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 20, ["detector"] = game:GetService("Workspace").Eggs.Hacker.Detector.Detector, ["Island"] = "Hacker", ["eggName"] = "Hacker", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2.5e+45 }, false)
-						end
-					end
-				else
-					getgenv().Egg17 = false;
-				end
-			end)
-			Section:NewToggle("Mars Egg", "ToggleInfo", function(state)
-				if state then
-					getgenv().Egg18 = true;
-	
-					while wait() do
-						if getgenv().Egg18 == true then
-							game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Mars, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 21, ["detector"] = game:GetService("Workspace").Eggs.Mars.Detector.Detector, ["Island"] = "Mars", ["eggName"] = "Mars", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+47 }, false)
-						end
-					end
-				else
-					getgenv().Egg18 = false;
-				end
-			end)
-			local Tab = Window:NewTab("Other")
-			local Section = Tab:NewSection("Auto rewards")
-			Section:NewToggle("Rebirth Chest", "ToggleInfo", function(state)
-				if state then
-					getgenv().rew1 = true;
-	
-					while wait() do
-						if getgenv().rew1 == true then
-							game:GetService("ReplicatedStorage").Events.Client.claimChestReward:InvokeServer("Rebirths")
-						end
-					end
-				else
-					getgenv().rew1 = false;
-				end
-			end)
-			Section:NewToggle("Tech World Clicks Chest", "ToggleInfo", function(state)
-				if state then
-					getgenv().rew2 = true;
-	
-					while wait() do
-						if getgenv().rew2 == true then
-							game:GetService("ReplicatedStorage").Events.Client.claimChestReward:InvokeServer("Tech World Clicks")
-						end
-					end
-				else
-					getgenv().rew2 = false;
-				end
-			end)
-			Section:NewToggle("Spin wheel", "ToggleInfo", function(state)
-				if state then
-					getgenv().rew3 = true;
-	
-					while wait() do
-						if getgenv().rew3 == true then
-							game:GetService("ReplicatedStorage").Events.Client.spinWheel:InvokeServer()
-						end
-					end
-				else
-					getgenv().rew3 = false;
-				end
-			end)
-			Section:NewToggle("Auto Claim Gifts", "ToggleInfo", function(state)
-				if state then
-					getgenv().rew4 = true;
-	
-					while wait() do
-						if getgenv().rew4 == true then
-							game:GetService("ReplicatedStorage").Events.Client.collectGifts:FireServer()
-						end
-					end
-				else
-					getgenv().rew4 = false;
-				end
-			end)
-			local Section = Tab:NewSection("Claim")
-			Section:NewButton("Get All boosts", "ButtonInfo", function()
-				for i,v in pairs(game.Players.LocalPlayer.Boosts:GetDescendants()) do
-					if v.Name == "isActive" then
-						v.Value = true
-					end
-				end
-			end)
-			Section:NewButton("Claim All Codes", "ButtonInfo", function()
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("250KLIKECLICKS")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("225KLIKECODE")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("200KLIKECODE")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("175KLIKELUCK")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("150KCLICKS")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("125KLUCK")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("100KLIKES")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("75KLIKES")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("30klikes")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("20KLIKES")
-				game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("Freeautohatch")
-	
-			end)
-			Section:NewButton("Verify Twiter", "ButtonInfo", function()
-				game:GetService("ReplicatedStorage").Events.Client.verifyTwitter:InvokeServer("@GamingDan9")
-				game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Successfully verified your Twitter!", true, 5)
-				game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Received permanent +10% Luck boost!", true, 5)
-			end)
-			----Settings
-	
-			local Tab = Window:NewTab("Settings")
-			local Section = Tab:NewSection("Settings")
-			local colors = {
-				SchemeColor = Color3.fromRGB(0,255,255),
-				Background = Color3.fromRGB(0, 0, 0),
-				Header = Color3.fromRGB(0, 0, 0),
-				TextColor = Color3.fromRGB(255,255,255),
-				ElementColor = Color3.fromRGB(20, 20, 20)
-			}
-			Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
-				Library:ToggleUI()
-			end)
-			Section:NewColorPicker("Color Text", "Color Info", Color3.fromRGB(0,0,0), function(color)
-				print(color)
-				-- Second argument is the default color
-			end)
-	
-	
-	
-	
-			---Credits
-	
-			local Tab = Window:NewTab("Credits")
-			local Section = Tab:NewSection("Credits")
-			Section:NewLabel("Credits to Lagun#6503")
-			Section:NewLabel("Join Our Discord: discord.gg/BbCZbaPTGp")
-	
-			local Player = Window:NewTab("Player")
-			local PlayerSection = Player:NewSection("Player")
-			PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
-				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
-			end)
-			PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
-				game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
-			end)
-	
-			
-		else
-			game.StarterGui:SetCore("SendNotification", {Title="LagunScripts"; Text="Wrong Key !"; Duration=3;})
+		while wait() do
+			if getgenv().sds46 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.slowAutoClickerActivate:Fire()
+				game:GetService("ReplicatedStorage").Bindable.Client.slowAutoClickerActivate:Fire()
+			end
 		end
-	end)
-	
-	
-end
-coroutine.wrap(TRCWFY_fake_script)()
-local function SAYM_fake_script() -- TextLabel.Put inside Part with PointLight 
-	local script = Instance.new('Script', TextLabel)
-
-	--Rainbow Light Color Changer by Lolygue
-	
-	--It's simpler to make a light color changer than you think
-	--If you want to learn how to make one then make sure to read these comments!
-	
-	-- Variable Definition: 「Basically it helps quickly get to a certain object by defining it as a variable. Think of it like shortcuts on your PC」
-	
-	
-	-- The Color changer: 「Here we have a line that gets the defined variable and changes it's color to red.」
-	-- The Color Code: 「There are three main colors: Red, Green, and Blue. (1,0,0) = Red, (0,1,0) = Green, (0,0,1) = Blue.」
-	
-	-- Hi, Hi, Hi, Hi, Hi-: 「This while true do will loop this part of the script forever」
-	while true do
-		script.Parent.TextColor3 = Color3.new(1,0,0)
-		-- Patience: 「The line below has the script wait for half a second before continuing」
-		wait(0.5)
-		-- Decimals: 「Decimals can also be put in, here we are going to mix a bit of Green with Red to make Orange」
-		script.Parent.TextColor3 = Color3.new(1, 0.75, 0)
-		wait(0.5)
-		-- Know your colors?: 「What comes after Orange in the rainbow? Yellow!」
-		script.Parent.TextColor3 = Color3.new(1,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0.75,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0.75)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0.75,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0,1)
-		wait(0.5)
-		-- Returning to square one: 「And now it is time to cycle back to red」
-		script.Parent.TextColor3 = Color3.new(0.75,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,0.75)
-		wait(0.5)
-		-- Another tale Begins: 「Because of the while true do, after this end, it goes back to the top!」
+	else
+		getgenv().sds46 = false;
 	end
-end
-coroutine.wrap(SAYM_fake_script)()
-local function KPENUB_fake_script() -- TextBox.Put inside Part with PointLight 
-	local script = Instance.new('Script', TextBox)
+end)
 
-	--Rainbow Light Color Changer by Lolygue
-	
-	--It's simpler to make a light color changer than you think
-	--If you want to learn how to make one then make sure to read these comments!
-	
-	-- Variable Definition: 「Basically it helps quickly get to a certain object by defining it as a variable. Think of it like shortcuts on your PC」
-	
-	
-	-- The Color changer: 「Here we have a line that gets the defined variable and changes it's color to red.」
-	-- The Color Code: 「There are three main colors: Red, Green, and Blue. (1,0,0) = Red, (0,1,0) = Green, (0,0,1) = Blue.」
-	
-	-- Hi, Hi, Hi, Hi, Hi-: 「This while true do will loop this part of the script forever」
-	while true do
-		script.Parent.TextColor3 = Color3.new(1,0,0)
-		-- Patience: 「The line below has the script wait for half a second before continuing」
-		wait(0.5)
-		-- Decimals: 「Decimals can also be put in, here we are going to mix a bit of Green with Red to make Orange」
-		script.Parent.TextColor3 = Color3.new(1, 0.75, 0)
-		wait(0.5)
-		-- Know your colors?: 「What comes after Orange in the rainbow? Yellow!」
-		script.Parent.TextColor3 = Color3.new(1,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0.75,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0.75)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0.75,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0,1)
-		wait(0.5)
-		-- Returning to square one: 「And now it is time to cycle back to red」
-		script.Parent.TextColor3 = Color3.new(0.75,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,0.75)
-		wait(0.5)
-		-- Another tale Begins: 「Because of the while true do, after this end, it goes back to the top!」
+local Section = Tab:NewSection("AutoRebirth")
+Section:NewToggle("1Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB1 = true;
+
+		while wait() do
+			if getgenv().RB1 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1, false, false)
+			end
+		end
+	else
+		getgenv().RB1 = false;
 	end
-end
-coroutine.wrap(KPENUB_fake_script)()
-local function TMNX_fake_script() -- UICorner_2.Put inside Part with PointLight 
-	local script = Instance.new('Script', UICorner_2)
+end)
+Section:NewToggle("5Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB5 = true;
 
-	--Rainbow Light Color Changer by Lolygue
-	
-	--It's simpler to make a light color changer than you think
-	--If you want to learn how to make one then make sure to read these comments!
-	
-	-- Variable Definition: 「Basically it helps quickly get to a certain object by defining it as a variable. Think of it like shortcuts on your PC」
-	
-	
-	-- The Color changer: 「Here we have a line that gets the defined variable and changes it's color to red.」
-	-- The Color Code: 「There are three main colors: Red, Green, and Blue. (1,0,0) = Red, (0,1,0) = Green, (0,0,1) = Blue.」
-	
-	-- Hi, Hi, Hi, Hi, Hi-: 「This while true do will loop this part of the script forever」
-	while true do
-		script.Parent.TextColor3 = Color3.new(1,0,0)
-		-- Patience: 「The line below has the script wait for half a second before continuing」
-		wait(0.5)
-		-- Decimals: 「Decimals can also be put in, here we are going to mix a bit of Green with Red to make Orange」
-		script.Parent.TextColor3 = Color3.new(1, 0.75, 0)
-		wait(0.5)
-		-- Know your colors?: 「What comes after Orange in the rainbow? Yellow!」
-		script.Parent.TextColor3 = Color3.new(1,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0.75,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,0.75)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,1,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0.75,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(0,0,1)
-		wait(0.5)
-		-- Returning to square one: 「And now it is time to cycle back to red」
-		script.Parent.TextColor3 = Color3.new(0.75,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,1)
-		wait(0.5)
-		script.Parent.TextColor3 = Color3.new(1,0,0.75)
-		wait(0.5)
-		-- Another tale Begins: 「Because of the while true do, after this end, it goes back to the top!」
+		while wait() do
+			if getgenv().RB5 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5, false, false)
+			end
+		end
+	else
+		getgenv().RB5 = false;
 	end
-end
-coroutine.wrap(TMNX_fake_script)()
-local function NYNA_fake_script() -- KeyFrame.Put inside Part with PointLight 
-	local script = Instance.new('Script', KeyFrame)
+end)
+Section:NewToggle("10Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB10 = true;
 
-	--Rainbow Light Color Changer by Lolygue
-	
-	--It's simpler to make a light color changer than you think
-	--If you want to learn how to make one then make sure to read these comments!
-	
-	-- Variable Definition: 「Basically it helps quickly get to a certain object by defining it as a variable. Think of it like shortcuts on your PC」
-	
-	
-	-- The Color changer: 「Here we have a line that gets the defined variable and changes it's color to red.」
-	-- The Color Code: 「There are three main colors: Red, Green, and Blue. (1,0,0) = Red, (0,1,0) = Green, (0,0,1) = Blue.」
-	
-	-- Hi, Hi, Hi, Hi, Hi-: 「This while true do will loop this part of the script forever」
-	while true do
-		script.Parent.BorderColor3 = Color3.new(1,0,0)
-		-- Patience: 「The line below has the script wait for half a second before continuing」
-		wait(0.5)
-		-- Decimals: 「Decimals can also be put in, here we are going to mix a bit of Green with Red to make Orange」
-		script.Parent.BorderColor3 = Color3.new(1, 0.75, 0)
-		wait(0.5)
-		-- Know your colors?: 「What comes after Orange in the rainbow? Yellow!」
-		script.Parent.BorderColor3 = Color3.new(1,1,0)
-		wait(0.5)
-		script.Parent.BorderColor3 = Color3.new(0.75,1,0)
-		wait(0.5)
-		script.Parent.BorderColor3 = Color3.new(0,1,0)
-		wait(0.5)
-		script.Parent.BorderColor3 = Color3.new(0,1,0.75)
-		wait(0.5)
-		script.Parent.BorderColor3 = Color3.new(0,1,1)
-		wait(0.5)
-		script.Parent.BorderColor3 = Color3.new(0,0.75,1)
-		wait(0.5)
-		script.Parent.BorderColor3 = Color3.new(0,0,1)
-		wait(0.5)
-		-- Returning to square one: 「And now it is time to cycle back to red」
-		script.Parent.BorderColor3 = Color3.new(0.75,0,1)
-		wait(0.5)
-		script.Parent.BorderColor3 = Color3.new(1,0,1)
-		wait(0.5)
-		script.Parent.BorderColor3 = Color3.new(1,0,0.75)
-		wait(0.5)
-		-- Another tale Begins: 「Because of the while true do, after this end, it goes back to the top!」
+		while wait() do
+			if getgenv().RB10 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(10, false, false)
+			end
+		end
+	else
+		getgenv().RB10 = false;
 	end
-end
-coroutine.wrap(NYNA_fake_script)()
-local function WRFUYTL_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+end)
+Section:NewToggle("50Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB50 = true;
 
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LiutaurasBaltasss/LiutaurasBaltasss/main/click%20sim"))()
-	end)
-end
-coroutine.wrap(WRFUYTL_fake_script)()
+		while wait() do
+			if getgenv().RB50 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50, false, false)
+			end
+		end
+	else
+		getgenv().RB50 = false;
+	end
+end)
+Section:NewToggle("250Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB250 = true;
+
+		while wait() do
+			if getgenv().RB250 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(250, false, false)
+			end
+		end
+	else
+		getgenv().RB250 = false;
+	end
+end)
+Section:NewToggle("1K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB1000 = true;
+
+		while wait() do
+			if getgenv().RB1000 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1000, false, false)
+			end
+		end
+	else
+		getgenv().RB1000 = false;
+	end
+end)
+Section:NewToggle("5K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB5000 = true;
+
+		while wait() do
+			if getgenv().RB5000 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5000, false, false)
+			end
+		end
+	else
+		getgenv().RB5000 = false;
+	end
+end)
+Section:NewToggle("25K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB25000 = true;
+
+		while wait() do
+			if getgenv().RB25000 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(25000, false, false)
+			end
+		end
+	else
+		getgenv().RB25000 = false;
+	end
+end)
+Section:NewToggle("125K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB12500 = true;
+
+		while wait() do
+			if getgenv().RB12500 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(12500, false, false)
+			end
+		end
+	else
+		getgenv().RB12500 = false;
+	end
+end)
+Section:NewToggle("500K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB500K = true;
+
+		while wait() do
+			if getgenv().RB500K == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(500000, false, false)
+			end
+		end
+	else
+		getgenv().RB500K = false;
+	end
+end)
+Section:NewToggle("3M Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB3M = true;
+
+		while wait() do
+			if getgenv().RB3M == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(3000000, false, false)
+			end
+		end
+	else
+		getgenv().RB3M = false;
+	end
+end)
+Section:NewToggle("15M Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15M = true;
+
+		while wait() do
+			if getgenv().RB15M == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(15000000, false, false)
+			end
+		end
+	else
+		getgenv().RB15M = false;
+	end
+end)
+Section:NewToggle("50M Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB50M = true;
+
+		while wait() do
+			if getgenv().RB50M == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50000000, false, false)
+			end
+		end
+	else
+		getgenv().RB50M = false;
+	end
+end)
+Section:NewToggle("250M Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB250M = true;
+
+		while wait() do
+			if getgenv().RB250M == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(250000000, false, false)
+			end
+		end
+	else
+		getgenv().RB250M = false;
+	end
+end)
+Section:NewToggle("1B Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB1B = true;
+
+		while wait() do
+			if getgenv().RB1B == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB1B = false;
+	end
+end)
+Section:NewToggle("5B Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB5B = true;
+
+		while wait() do
+			if getgenv().RB5B == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB5B = false;
+	end
+end)
+Section:NewToggle("25B Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB25B = true;
+
+		while wait() do
+			if getgenv().RB25B == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(25000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB25B = false;
+	end
+end)
+Section:NewToggle("750B Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB750B = true;
+
+		while wait() do
+			if getgenv().RB750B == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(750000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB750B = false;
+	end
+end)
+Section:NewToggle("3.5T Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB3T = true;
+
+		while wait() do
+			if getgenv().RB3T == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(3500000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB3T = false;
+	end
+end)
+Section:NewToggle("20T Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB20T = true;
+
+		while wait() do
+			if getgenv().RB20T == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(20000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB20T = false;
+	end
+end)
+Section:NewToggle("100T Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB100T = true;
+
+		while wait() do
+			if getgenv().RB100T == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(100000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB100T = false;
+	end
+end)
+Section:NewToggle("500T Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB500T = true;
+
+		while wait() do
+			if getgenv().RB500T == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(500000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB500T = false;
+	end
+end)
+Section:NewToggle("15QA Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15QA = true;
+
+		while wait() do
+			if getgenv().RB15QA == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1500000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB15QA = false;
+	end
+end)
+Section:NewToggle("75QA Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB75QA = true;
+
+		while wait() do
+			if getgenv().RB75QA == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(7500000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB75QA = false;
+	end
+end)
+Section:NewToggle("375QA Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB375QA = true;
+
+		while wait() do
+			if getgenv().RB375QA == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(37500000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB375QA = false;
+	end
+end)
+Section:NewToggle("2.5QI Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB25QI = true;
+
+		while wait() do
+			if getgenv().RB25QI == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2500000000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB25QI = false;
+	end
+end)
+Section:NewToggle("15QI Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15QI = true;
+
+		while wait() do
+			if getgenv().RB15QI == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(15000000000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB15QI = false;
+	end
+end)
+Section:NewToggle("75QI Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB75QI = true;
+
+		while wait() do
+			if getgenv().RB75QI == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(75000000000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB75QI = false;
+	end
+end)
+Section:NewToggle("375QI Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB375QI = true;
+
+		while wait() do
+			if getgenv().RB375QI == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(375000000000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB375QI = false;
+	end
+end)
+Section:NewToggle("2SX Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB2SX = true;
+
+		while wait() do
+			if getgenv().RB2SX == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.e+21, false, false)
+			end
+		end
+	else
+		getgenv().RB2SX = false;
+	end
+end)
+Section:NewToggle("50SX Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB50SX = true;
+
+		while wait() do
+			if getgenv().RB50SX == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50.e+21, false, false)
+			end
+		end
+	else
+		getgenv().RB50SX = false;
+	end
+end)
+local Tab = Window:NewTab("Auto Open Egs")
+local Section = Tab:NewSection("Normal World")
+Section:NewToggle("Frozen Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg1 = true;
+
+		while wait() do
+			if getgenv().Egg1 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Frozen Arctic"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 4, ["detector"] = game:GetService("Workspace").Eggs["Frozen Arctic"].Detector.Detector, ["Island"] = "Ice", ["eggName"] = "Frozen Arctic", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 25000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg1 = false;
+	end
+end)
+Section:NewToggle("Lava dragon Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg2 = true;
+
+		while wait() do
+			if getgenv().Egg2 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Lava Dragon"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 5, ["detector"] = game:GetService("Workspace").Eggs["Lava Dragon"].Detector.Detector, ["Island"] = "Lava", ["eggName"] = "Lava Dragon", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg2 = false;
+	end
+end)
+Section:NewToggle("Treasure Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg3 = true;
+
+		while wait() do
+			if getgenv().Egg3 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treasure, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 6, ["detector"] = game:GetService("Workspace").Eggs.Treasure.Detector.Detector, ["Island"] = "Pirate", ["eggName"] = "Treasure", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 65000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg3 = false;
+	end
+end)
+Section:NewToggle("Space Guardian Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg4 = true;
+
+		while wait() do
+			if getgenv().Egg4 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Space Guardian"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 7, ["detector"] = game:GetService("Workspace").Eggs["Space Guardian"].Detector.Detector, ["Island"] = "Space", ["eggName"] = "Space Guardian", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3750000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg4 = false;
+	end
+end)
+Section:NewToggle("Treeland Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg5 = true;
+
+		while wait() do
+			if getgenv().Egg5 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treeland, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 8, ["detector"] = game:GetService("Workspace").Eggs.Treeland.Detector.Detector, ["Island"] = "Forest", ["eggName"] = "Treeland", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 100000000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg5 = false;
+	end
+end)
+Section:NewToggle("Ice Cream Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg6 = true;
+
+		while wait() do
+			if getgenv().Egg6 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Cream"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 9, ["detector"] = game:GetService("Workspace").Eggs["Ice Cream"].Detector.Detector, ["Island"] = "Candyland", ["eggName"] = "Ice Cream", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1900000000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg6 = false;
+	end
+end)
+Section:NewToggle("Atlantis Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg7 = true;
+
+		while wait() do
+			if getgenv().Egg7 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Atlantis, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 10, ["detector"] = game:GetService("Workspace").Eggs.Atlantis.Detector.Detector, ["Island"] = "Atlantis", ["eggName"] = "Atlantis", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 62000000000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg7 = false;
+	end
+end)
+Section:NewToggle("Tropical Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg8 = true;
+
+		while wait() do
+			if getgenv().Egg8 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
+			end
+		end
+	else
+		getgenv().Egg8 = false;
+	end
+end)
+Section:NewToggle("Tropical Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg9 = true;
+
+		while wait() do
+			if getgenv().Egg9 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
+			end
+		end
+	else
+		getgenv().Egg9 = false;
+	end
+end)
+Section:NewToggle("Galaxy Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg10 = true;
+
+		while wait() do
+			if getgenv().Egg10 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Galaxy, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 13, ["detector"] = game:GetService("Workspace").Eggs.Galaxy.Detector.Detector, ["Island"] = "Galaxy", ["eggName"] = "Galaxy", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.3e+26 }, false)
+			end
+		end
+	else
+		getgenv().Egg10 = false;
+	end
+end)
+local Section = Tab:NewSection("Tech World")
+Section:NewToggle("Tech Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg11 = true;
+
+		while wait() do
+			if getgenv().Egg11 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tech, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 14, ["detector"] = game:GetService("Workspace").Eggs.Tech.Detector.Detector, ["Island"] = "techWorld", ["eggName"] = "Tech", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 4.e+31 }, false)
+			end
+		end
+	else
+		getgenv().Egg11 = false;
+	end
+end)
+Section:NewToggle("Robot Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg12 = true;
+
+		while wait() do
+			if getgenv().Egg12 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Robot, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 15, ["detector"] = game:GetService("Workspace").Eggs.Robot.Detector.Detector, ["Island"] = "Robot", ["eggName"] = "Robot", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+32 }, false)
+			end
+		end
+	else
+		getgenv().Egg12 = false;
+	end
+end)
+Section:NewToggle("Chemical Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg13 = true;
+
+		while wait() do
+			if getgenv().Egg13 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Chemical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 16, ["detector"] = game:GetService("Workspace").Eggs.Chemical.Detector.Detector, ["Island"] = "Chemical", ["eggName"] = "Chemical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+35 }, false)
+			end
+		end
+	else
+		getgenv().Egg13 = false;
+	end
+end)
+Section:NewToggle("Steampunk Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg14 = true;
+
+		while wait() do
+			if getgenv().Egg14 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Steampunk, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 17, ["detector"] = game:GetService("Workspace").Eggs.Steampunk.Detector.Detector, ["Island"] = "Steampunk", ["eggName"] = "Steampunk", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+37 }, false)
+			end
+		end
+	else
+		getgenv().Egg14 = false;
+	end
+end)
+Section:NewToggle("Holographic Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg15 = true;
+
+		while wait() do
+			if getgenv().Egg15 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Holographic, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 18, ["detector"] = game:GetService("Workspace").Eggs.Holographic.Detector.Detector, ["Island"] = "Holographic", ["eggName"] = "Holographic", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+40 }, false)
+			end
+		end
+	else
+		getgenv().Egg15 = false;
+	end
+end)
+Section:NewToggle("Music Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg16 = true;
+
+		while wait() do
+			if getgenv().Egg16 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Music, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 19, ["detector"] = game:GetService("Workspace").Eggs.Music.Detector.Detector, ["Island"] = "Music", ["eggName"] = "Music", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+42 }, false)
+			end
+		end
+	else
+		getgenv().Egg16 = false;
+	end
+end)
+Section:NewToggle("Hacker Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg17 = true;
+
+		while wait() do
+			if getgenv().Egg17 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Hacker, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 20, ["detector"] = game:GetService("Workspace").Eggs.Hacker.Detector.Detector, ["Island"] = "Hacker", ["eggName"] = "Hacker", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2.5e+45 }, false)
+			end
+		end
+	else
+		getgenv().Egg17 = false;
+	end
+end)
+Section:NewToggle("Mars Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg18 = true;
+
+		while wait() do
+			if getgenv().Egg18 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Mars, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 21, ["detector"] = game:GetService("Workspace").Eggs.Mars.Detector.Detector, ["Island"] = "Mars", ["eggName"] = "Mars", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+47 }, false)
+			end
+		end
+	else
+		getgenv().Egg18 = false;
+	end
+end)
+local Tab = Window:NewTab("Other")
+local Section = Tab:NewSection("Auto rewards")
+Section:NewToggle("Rebirth Chest", "ToggleInfo", function(state)
+	if state then
+		getgenv().rew1 = true;
+
+		while wait() do
+			if getgenv().rew1 == true then
+				game:GetService("ReplicatedStorage").Events.Client.claimChestReward:InvokeServer("Rebirths")
+			end
+		end
+	else
+		getgenv().rew1 = false;
+	end
+end)
+Section:NewToggle("Tech World Clicks Chest", "ToggleInfo", function(state)
+	if state then
+		getgenv().rew2 = true;
+
+		while wait() do
+			if getgenv().rew2 == true then
+				game:GetService("ReplicatedStorage").Events.Client.claimChestReward:InvokeServer("Tech World Clicks")
+			end
+		end
+	else
+		getgenv().rew2 = false;
+	end
+end)
+Section:NewToggle("Spin wheel", "ToggleInfo", function(state)
+	if state then
+		getgenv().rew3 = true;
+
+		while wait() do
+			if getgenv().rew3 == true then
+				game:GetService("ReplicatedStorage").Events.Client.spinWheel:InvokeServer()
+			end
+		end
+	else
+		getgenv().rew3 = false;
+	end
+end)
+Section:NewToggle("Auto Claim Gifts", "ToggleInfo", function(state)
+	if state then
+		getgenv().rew4 = true;
+
+		while wait() do
+			if getgenv().rew4 == true then
+				game:GetService("ReplicatedStorage").Events.Client.collectGifts:FireServer()
+			end
+		end
+	else
+		getgenv().rew4 = false;
+	end
+end)
+local Section = Tab:NewSection("Claim")
+Section:NewButton("Get All boosts", "ButtonInfo", function()
+	for i,v in pairs(game.Players.LocalPlayer.Boosts:GetDescendants()) do
+		if v.Name == "isActive" then
+			v.Value = true
+		end
+	end
+end)
+Section:NewButton("Claim All Codes", "ButtonInfo", function()
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("250KLIKECLICKS")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("225KLIKECODE")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("200KLIKECODE")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("175KLIKELUCK")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("150KCLICKS")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("125KLUCK")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("100KLIKES")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("75KLIKES")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("30klikes")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("20KLIKES")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("Freeautohatch")
+
+end)
+Section:NewButton("Verify Twiter", "ButtonInfo", function()
+	game:GetService("ReplicatedStorage").Events.Client.verifyTwitter:InvokeServer("@GamingDan9")
+	game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Successfully verified your Twitter!", true, 5)
+	game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Received permanent +10% Luck boost!", true, 5)
+end)
+----Settings
+
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Settings")
+local colors = {
+	SchemeColor = Color3.fromRGB(0,255,255),
+	Background = Color3.fromRGB(0, 0, 0),
+	Header = Color3.fromRGB(0, 0, 0),
+	TextColor = Color3.fromRGB(255,255,255),
+	ElementColor = Color3.fromRGB(20, 20, 20)
+}
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+Section:NewColorPicker("Color Text", "Color Info", Color3.fromRGB(0,0,0), function(color)
+	print(color)
+	-- Second argument is the default color
+end)
+
+
+
+
+---Credits
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Credits")
+Section:NewLabel("Credits to Lagun#6503")
+Section:NewLabel("Dont forget to join discord: discord.gg/Ux55tWTV")
+
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
