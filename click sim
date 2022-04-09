@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("⚡Clicker Simulator!⚡ made by Lagun", "DarkTheme")
+local Window = Library.CreateLib("⚡Clicker Simulator!⚡ made by Lagun", "Serpent")
 local Tab = Window:NewTab("Autofarm")
 local Section = Tab:NewSection("AutoClicker")
 Section:NewToggle("Fast auto clicker", "ToggleInfo", function(state)
@@ -422,6 +422,123 @@ Section:NewToggle("50SX Rebirth", "ToggleInfo", function(state)
 		getgenv().RB50SX = false;
 	end
 end)
+Section:NewToggle("250SX Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB250SX = true;
+
+		while wait() do
+			if getgenv().RB250SX == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.5e+23, false, false)
+			end
+		end
+	else
+		getgenv().RB250SX = false;
+	end
+end)
+Section:NewToggle("1.5SP Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15SP = true;
+
+		while wait() do
+			if getgenv().RB15SP == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1.5e+24, false, false)
+			end
+		end
+	else
+		getgenv().RB15SP = false;
+	end
+end)
+Section:NewToggle("20SP Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB20SP = true;
+
+		while wait() do
+			if getgenv().RB20SP == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.e+25, false, false)
+			end
+		end
+	else
+		getgenv().RB20SP = false;
+	end
+end)
+Section:NewToggle("100SP Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB100SP = true;
+
+		while wait() do
+			if getgenv().RB100SP == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1.e+26, false, false)
+			end
+		end
+	else
+		getgenv().RB100SP = false;
+	end
+end)
+Section:NewToggle("600SP Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB600SP = true;
+
+		while wait() do
+			if getgenv().RB600SP == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(6.e+26, false, false)
+			end
+		end
+	else
+		getgenv().RB600SP = false;
+	end
+end)
+Section:NewToggle("3OC Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB3OC = true;
+
+		while wait() do
+			if getgenv().RB3OC == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(3.e+27, false, false)
+			end
+		end
+	else
+		getgenv().RB3OC = false;
+	end
+end)
+Section:NewToggle("18OC Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB18OC = true;
+
+		while wait() do
+			if getgenv().RB18OC == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1.8e+28, false, false)
+			end
+		end
+	else
+		getgenv().RB18OC = false;
+	end
+end)
+Section:NewToggle("90OC Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB90OC = true;
+
+		while wait() do
+			if getgenv().RB90OC == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(9.e+28, false, false)
+			end
+		end
+	else
+		getgenv().RB90OC = false;
+	end
+end)
+Section:NewToggle("500OC Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB500OC = true;
+
+		while wait() do
+			if getgenv().RB500OC == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5.e+29, false, false)
+			end
+		end
+	else
+		getgenv().RB500OC = false;
+	end
+end)
 local Tab = Window:NewTab("Auto Open Egs")
 local Section = Tab:NewSection("Normal World")
 Section:NewToggle("Frozen Egg", "ToggleInfo", function(state)
@@ -659,6 +776,46 @@ Section:NewToggle("Mars Egg", "ToggleInfo", function(state)
 		getgenv().Egg18 = false;
 	end
 end)
+local Section = Tab:NewSection("Travel World")
+Section:NewToggle("Time Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg19 = true;
+
+		while wait() do
+			if getgenv().Egg19 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Time, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 22, ["detector"] = game:GetService("Workspace").Eggs.Time.Detector.Detector, ["Island"] = "timeWorld", ["eggName"] = "Time", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 9.e+55 }, false)
+			end
+		end
+	else
+		getgenv().Egg19 = false;
+	end
+end)
+Section:NewToggle("Dinosaur Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg20 = true;
+
+		while wait() do
+			if getgenv().Egg20 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Dinosaur, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 23, ["detector"] = game:GetService("Workspace").Eggs.Dinosaur.Detector.Detector, ["Island"] = "Dinosaur", ["eggName"] = "Dinosaur", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+59 }, false)
+			end
+		end
+	else
+		getgenv().Egg20 = false;
+	end
+end)
+Section:NewToggle("Ice Age Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg21 = true;
+
+		while wait() do
+			if getgenv().Egg21 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Age"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 25, ["detector"] = game:GetService("Workspace").Eggs["Ice Age"].Detector.Detector, ["Island"] = "Ice Age", ["eggName"] = "Ice Age", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.e+62 }, false)
+			end
+		end
+	else
+		getgenv().Egg21 = false;
+	end
+end)
 local Tab = Window:NewTab("Other")
 local Section = Tab:NewSection("Auto rewards")
 Section:NewToggle("Rebirth Chest", "ToggleInfo", function(state)
@@ -685,6 +842,19 @@ Section:NewToggle("Tech World Clicks Chest", "ToggleInfo", function(state)
 		end
 	else
 		getgenv().rew2 = false;
+	end
+end)
+Section:NewToggle("Travel World Clicks Chest", "ToggleInfo", function(state)
+	if state then
+		getgenv().rewa2 = true;
+
+		while wait() do
+			if getgenv().rewa2 == true then
+				game:GetService("ReplicatedStorage").Events.Client.claimChestReward:InvokeServer("Time World Clicks")
+			end
+		end
+	else
+		getgenv().rewa2 = false;
 	end
 end)
 Section:NewToggle("Spin wheel", "ToggleInfo", function(state)
