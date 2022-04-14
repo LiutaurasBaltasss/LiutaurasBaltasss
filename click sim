@@ -539,6 +539,32 @@ Section:NewToggle("500OC Rebirth", "ToggleInfo", function(state)
 		getgenv().RB500OC = false;
 	end
 end)
+Section:NewToggle("2.5NO Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB25NO = true;
+
+		while wait() do
+			if getgenv().RB25NO == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.5e+30, false, false)
+			end
+		end
+	else
+		getgenv().RB25NO = false;
+	end
+end)
+Section:NewToggle("15NO Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15NO = true;
+
+		while wait() do
+			if getgenv().RB15NO == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1.5e+31, false, false)
+			end
+		end
+	else
+		getgenv().RB15NO = false;
+	end
+end)
 local Tab = Window:NewTab("Auto Open Egs")
 local Section = Tab:NewSection("Normal World")
 Section:NewToggle("Frozen Egg", "ToggleInfo", function(state)
@@ -816,6 +842,20 @@ Section:NewToggle("Ice Age Egg", "ToggleInfo", function(state)
 		getgenv().Egg21 = false;
 	end
 end)
+local Section = Tab:NewSection("Limited Egg")
+Section:NewToggle("Easter Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg22 = true;
+
+		while wait() do
+			if getgenv().Egg22 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Easter Event"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["detector"] = game:GetService("Workspace").Eggs["Easter Event"].Detector.Detector, ["Island"] = "Lobby", ["canAutoDelete"] = true, ["eggName"] = "Easter Event", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 250000000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg22 = false;
+	end
+end)
 local Tab = Window:NewTab("Other")
 local Section = Tab:NewSection("Auto rewards")
 Section:NewToggle("Rebirth Chest", "ToggleInfo", function(state)
@@ -909,6 +949,15 @@ Section:NewButton("Verify Twiter", "ButtonInfo", function()
 	game:GetService("ReplicatedStorage").Events.Client.verifyTwitter:InvokeServer("@GamingDan9")
 	game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Successfully verified your Twitter!", true, 5)
 	game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Received permanent +10% Luck boost!", true, 5)
+end)
+Section:NewButton("Anti Afk", "ButtonInfo", function()
+	assert(firesignal, "Your exploit does not support firesignal.")
+	local UserInputService: UserInputService = game:GetService("UserInputService")
+	local RunService: RunService = game:GetService("RunService")
+	UserInputService.WindowFocusReleased:Connect(function()
+		RunService.Stepped:Wait()
+		pcall(firesignal, UserInputService.WindowFocused)
+	end)
 end)
 ----Settings
 
