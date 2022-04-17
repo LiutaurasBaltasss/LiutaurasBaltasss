@@ -565,6 +565,19 @@ Section:NewToggle("15NO Rebirth", "ToggleInfo", function(state)
 		getgenv().RB15NO = false;
 	end
 end)
+Section:NewToggle("75NO Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB75NO = true;
+
+		while wait() do
+			if getgenv().RB75NO == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(7.5e+31, false, false)
+			end
+		end
+	else
+		getgenv().RB75NO = false;
+	end
+end)
 local Tab = Window:NewTab("Auto Open Egs")
 local Section = Tab:NewSection("Normal World")
 Section:NewToggle("Frozen Egg", "ToggleInfo", function(state)
@@ -842,7 +855,20 @@ Section:NewToggle("Ice Age Egg", "ToggleInfo", function(state)
 		getgenv().Egg21 = false;
 	end
 end)
-local Section = Tab:NewSection("Limited Egg")
+Section:NewToggle("Samurai Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg23 = true;
+
+		while wait() do
+			if getgenv().Egg23 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Samurai, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 25, ["detector"] = game:GetService("Workspace").Eggs.Samurai.Detector.Detector, ["Island"] = "Samurai", ["eggName"] = "Samurai", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3.75e+62 }, false)
+			end
+		end
+	else
+		getgenv().Egg23 = false;
+	end
+end)
+local Section = Tab:NewSection("Event eggs")
 Section:NewToggle("Easter Egg", "ToggleInfo", function(state)
 	if state then
 		getgenv().Egg22 = true;
@@ -951,12 +977,11 @@ Section:NewButton("Verify Twiter", "ButtonInfo", function()
 	game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Received permanent +10% Luck boost!", true, 5)
 end)
 Section:NewButton("Anti Afk", "ButtonInfo", function()
-	assert(firesignal, "Your exploit does not support firesignal.")
-	local UserInputService: UserInputService = game:GetService("UserInputService")
-	local RunService: RunService = game:GetService("RunService")
-	UserInputService.WindowFocusReleased:Connect(function()
-		RunService.Stepped:Wait()
-		pcall(firesignal, UserInputService.WindowFocused)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 	end)
 end)
 ----Settings
