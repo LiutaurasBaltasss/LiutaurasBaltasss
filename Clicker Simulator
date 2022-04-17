@@ -1,1 +1,1023 @@
- local an = Instance.new("\83\99\114\101\101\110\71\117\105") local i = Instance.new("\73\109\97\103\101\76\97\98\101\108") local h = Instance.new("\84\101\120\116\66\117\116\116\111\110") local b = Instance.new("\84\101\120\116\76\97\98\101\108") local c = Instance.new("\73\109\97\103\101\76\97\98\101\108") local q = Instance.new("\84\101\120\116\66\111\120") local m = Instance.new("\70\114\97\109\101") local s = Instance.new("\84\101\120\116\76\97\98\101\108") local f = Instance.new("\84\101\120\116\66\111\120") local k = Instance.new("\73\109\97\103\101\76\97\98\101\108") local r = Instance.new("\84\101\120\116\66\117\116\116\111\110") an.Name = "\76\111\103\105\110\83\99\114\101\101\110" an.Parent = game.Players.LocalPlayer:WaitForChild("\80\108\97\121\101\114\71\117\105") i.Name = "\108\111\103\105\110" i.Parent = an i.BackgroundColor3 = Color3.fromRGB(90, 90, 90) i.BackgroundTransparency = 1.000 i.Position = UDim2.new(0.1192417, 0, 0.151204228, 0) i.Size = UDim2.new(0, 700, 0, 366) i.Image = "\114\98\120\97\115\115\101\116\105\100\58\47\47\51\53\55\48\54\57\53\55\56\55" i.ImageColor3 = Color3.fromRGB(90, 90, 90) i.ScaleType = Enum.ScaleType.Slice i.SliceCenter = Rect.new(100, 100, 100, 100) i.SliceScale = 0.120 h.Name = "\69\110\116\101\114" h.Parent = i h.BackgroundColor3 = Color3.fromRGB(52, 47, 47) h.BackgroundTransparency = 0.900 h.BorderSizePixel = 0 h.Position = UDim2.new(0.331183732, 0, 0.568677723, 0) h.Size = UDim2.new(0, 213, 0, 56) h.Font = Enum.Font.GothamBold h.Text = "\83\117\98\109\105\116" h.TextColor3 = Color3.fromRGB(255, 255, 255) h.TextScaled = true h.TextSize = 14.000 h.TextTransparency = 1.000 h.TextWrapped = true b.Name = "\108\97\98\101\108" b.Parent = h b.BackgroundColor3 = Color3.fromRGB(44, 44, 44) b.BorderColor3 = Color3.fromRGB(27, 42, 53) b.Position = UDim2.new(-0.0657277107, 0, -0.178088382, 0) b.Size = UDim2.new(0, 263, 0, 66) b.Font = Enum.Font.Cartoon b.Text = "\69\78\84\69\82" b.TextColor3 = Color3.fromRGB(0, 170, 0) b.TextScaled = true b.TextSize = 14.000 b.TextStrokeTransparency = 0.000 b.TextWrapped = true c.Name = "\98\111\120" c.Parent = i c.BackgroundColor3 = Color3.fromRGB(255, 255, 255) c.BackgroundTransparency = 1.000 c.Position = UDim2.new(0.192613468, 0, 0.282949865, 0) c.Size = UDim2.new(0, 405, 0, 70) c.Image = "\114\98\120\97\115\115\101\116\105\100\58\47\47\51\53\55\48\54\57\53\55\56\55" c.ImageColor3 = Color3.fromRGB(54, 54, 54) c.ScaleType = Enum.ScaleType.Slice c.SliceCenter = Rect.new(100, 100, 100, 100) c.SliceScale = 0.120 q.Name = "\112\97\115\115\119\111\114\100" q.Parent = c q.BackgroundColor3 = Color3.fromRGB(78, 73, 77) q.BackgroundTransparency = 1.000 q.BorderSizePixel = 0 q.Position = UDim2.new(0.00164704502, 0, 0.03038821, 0) q.Size = UDim2.new(0, 405, 0, 66) q.Font = Enum.Font.SourceSansLight q.PlaceholderText = "\75\101\121\32\72\101\114\101" q.Text = "" q.TextColor3 = Color3.fromRGB(255, 255, 255) q.TextSize = 60.000 m.Parent = i m.BackgroundColor3 = Color3.fromRGB(70, 70, 70) m.Position = UDim2.new(-0.000348642468, 0, -0.00164866447, 0) m.Size = UDim2.new(0, 699, 0, 50) s.Parent = m s.BackgroundColor3 = Color3.fromRGB(255, 255, 255) s.BackgroundTransparency = 1.000 s.Position = UDim2.new(0.119025156, 0, -0.00608706474, 0) s.Size = UDim2.new(0, 569, 0, 50) s.Font = Enum.Font.Cartoon s.Text = "\76\65\71\85\78\32\83\67\82\73\80\84\83" s.TextColor3 = Color3.fromRGB(255, 0, 0) s.TextScaled = true s.TextSize = 14.000 s.TextStrokeTransparency = 0.000 s.TextWrapped = true f.Parent = m f.BackgroundColor3 = Color3.fromRGB(44, 44, 44) f.Position = UDim2.new(0.311874092, 0, 5.80000019, 0) f.Size = UDim2.new(0, 262, 0, 63) f.ClearTextOnFocus = false f.Font = Enum.Font.Arial f.MultiLine = true f.Text = "\71\69\84\32\75\69\89\58\32\104\116\116\112\115\58\47\47\100\105\115\99\111\114\100\46\103\103\47\53\89\56\97\119\86\87\119\77\84" f.TextColor3 = Color3.fromRGB(0, 170, 0) f.TextSize = 14.000 k.Name = "\69\88\67" k.Parent = an k.BackgroundColor3 = Color3.fromRGB(255, 255, 255) k.BackgroundTransparency = 1.000 k.Position = UDim2.new(0.273553222, 0, 0.302973777, 0) k.Size = UDim2.new(0, 440, 0, 168) k.Visible = false k.Image = "\114\98\120\97\115\115\101\116\105\100\58\47\47\51\53\55\48\54\57\53\55\56\55" k.ImageColor3 = Color3.fromRGB(78, 78, 78) k.ScaleType = Enum.ScaleType.Slice k.SliceCenter = Rect.new(100, 100, 100, 100) k.SliceScale = 0.120 r.Name = "\69\88\67\115" r.Parent = an r.BackgroundColor3 = Color3.fromRGB(255, 255, 255) r.BackgroundTransparency = 0.900 r.Position = UDim2.new(0.422762871, 0, 0.413809061, 0) r.Size = UDim2.new(0, 200, 0, 50) r.Visible = false r.Font = Enum.Font.Cartoon r.Text = "\69\88\67\85\84\69" r.TextColor3 = Color3.fromRGB(0, 0, 0) r.TextScaled = true r.TextSize = 14.000 r.TextStrokeTransparency = 0.000 r.TextWrapped = true local function MWCNQAQ_fake_li()  local li = Instance.new('LocalScript', an) end coroutine.wrap(MWCNQAQ_fake_li)() local function TQIIA_fake_li()  local li = Instance.new('LocalScript', h) local q = li.Parent.Parent.box.password local o = li.Parent.Parent.Parent.EXC local g = li.Parent.Parent.Parent.EXCs local i = li.Parent.Parent li.Parent.MouseButton1Click:Connect(function()  if q.Text == "\78\101\114\105\110\103\97\64\49" or  q.Text == "\90\52\51\115\71\120\111\57\65\35" then  game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\67\111\114\114\101\99\116\33"; Text="\76\97\103\117\110\115\99\114\105\112\116\115"; Duration=2;}) i.Visible = false o.Visible = true  g.Visible = true end end) end coroutine.wrap(TQIIA_fake_li)() local function j()  local li = Instance.new('Script', r) li.Parent.MouseButton1Click:Connect(function() game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110",  { Title = "\68\111\110\116\32\102\111\114\32\103\101\116\32\116\111\32\106\111\105\110\32\111\117\114\32\100\105\115\99\111\114\100"; Text = "\100\105\115\99\111\114\100\46\103\103\47\53\89\56\97\119\86\87\119\77\84"; Icon = ""; Duration = 10; Button1 = "\79\75"; }) end) li.Parent.MouseButton1Click:Connect(function() li.Parent.Parent.EXC.Visible = not li.Parent.Parent.EXC.Visible li.Parent.Parent.EXCs.Visible = not li.Parent.Parent.EXCs.Visible end) li.Parent.MouseButton1Click:Connect(function() if game.PlaceId == 7560156054 then local _ = loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\120\72\101\112\116\99\47\75\97\118\111\45\85\73\45\76\105\98\114\97\114\121\47\109\97\105\110\47\115\111\117\114\99\101\46\108\117\97"))() local n_l = { SchemeColor = Color3.fromRGB(255, 0, 0), Background = Color3.fromRGB(0, 0, 0), Header = Color3.fromRGB(0, 0, 0), TextColor = Color3.fromRGB(255, 255, 255), ElementColor = Color3.fromRGB(20, 20, 20) } local an_ = _.CreateLib("\226\154\161\67\108\105\99\107\101\114\32\83\105\109\117\108\97\116\111\114\226\154\161", n_l) local oq = an_:NewTab("\65\117\116\111\102\97\114\109") local go = oq:NewSection("\65\117\116\111\67\108\105\107\101\114\115") go:NewToggle("\86\101\114\121\32\70\97\115\116\32\65\117\116\111\32\67\108\105\107\101\114", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\86\101\114\121\32\70\97\115\116\32\65\117\116\111\32\67\108\105\107\101\114\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RA = true; while wait() do if getgenv().RA== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.slowAutoClickerActivate:Fire() end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\86\101\114\121\32\70\97\115\116\32\65\117\116\111\32\67\108\105\107\101\114\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RA = false; end end) local go = oq:NewSection("\82\101\98\105\114\116\104") go:NewToggle("\43\49\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB1 = true; while wait() do if getgenv().RB1== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(1, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB1 = false; end end) go:NewToggle("\43\53\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB2 = true; while wait() do if getgenv().RB2== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(5, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB2 = false; end end) go:NewToggle("\43\49\48\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\48\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB3 = true; while wait() do if getgenv().RB3== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(10, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\48\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB3 = false; end end) go:NewToggle("\43\53\48\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\48\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB4 = true; while wait() do if getgenv().RB4== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(50, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\48\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB4 = false; end end) go:NewToggle("\43\50\53\48\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\50\53\48\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB5 = true; while wait() do if getgenv().RB5== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(250, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\50\53\48\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB5 = false; end end) go:NewToggle("\43\49\75\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\75\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB6 = true; while wait() do if getgenv().RB6== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(1000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\75\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB6 = false; end end) go:NewToggle("\43\53\75\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\75\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB7 = true; while wait() do if getgenv().RB7== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(5000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\75\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB7 = false; end end) go:NewToggle("\43\53\75\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\75\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB7 = true; while wait() do if getgenv().RB7== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(5000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\75\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB7 = false; end end) go:NewToggle("\43\50\53\75\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\50\53\75\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB8 = true; while wait() do if getgenv().RB8== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(25000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\50\53\75\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB8 = false; end end) go:NewToggle("\43\49\50\53\75\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\50\53\75\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB9 = true; while wait() do if getgenv().RB9== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(125000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\50\53\75\32\82\101\98\105\114\116\104\32\118"; Duration=1;}) getgenv().RB9 = false; end end) go:NewToggle("\43\53\48\48\75\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\48\48\75\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB10 = true; while wait() do if getgenv().RB10== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(500000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\48\48\75\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB10 = false; end end) go:NewToggle("\43\51\77\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\51\77\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB11 = true; while wait() do if getgenv().RB11== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(3000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\51\77\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB11 = false; end end) go:NewToggle("\43\49\53\77\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\53\77\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB12 = true; while wait() do if getgenv().RB12== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(15000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\53\77\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB12 = false; end end) go:NewToggle("\43\53\48\77\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\48\77\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB13 = true; while wait() do if getgenv().RB13== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(50000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\48\77\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB13 = false; end end) go:NewToggle("\43\50\53\48\77\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\50\53\48\77\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB14 = true; while wait() do if getgenv().RB14== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(250000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\50\53\48\77\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB14 = false; end end) go:NewToggle("\43\49\66\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\66\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB15 = true; while wait() do if getgenv().RB15== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(1000000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\66\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB15 = false; end end) go:NewToggle("\43\53\66\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\66\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB16 = true; while wait() do if getgenv().RB16== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(5000000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\66\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB16 = false; end end) go:NewToggle("\43\50\53\66\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\50\53\66\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB17 = true; while wait() do if getgenv().RB17== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(25000000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\50\53\66\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB17 = false; end end) go:NewToggle("\43\53\48\66\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\48\66\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB18 = true; while wait() do if getgenv().RB18== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(50000000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\53\48\66\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB18 = false; end end) go:NewToggle("\43\49\53\48\66\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\53\48\66\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB19 = true; while wait() do if getgenv().RB19== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(150000000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\49\53\48\66\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB19 = false; end end) go:NewToggle("\43\55\53\48\66\32\82\101\98\105\114\116\104", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\55\53\48\66\32\82\101\98\105\114\116\104\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().RB20 = true; while wait() do if getgenv().RB20== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.requestRebirth:FireServer(750000000000, false, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\43\55\53\48\66\32\82\101\98\105\114\116\104\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().RB20 = false; end end) local oq = an_:NewTab("\65\117\116\111\69\103\103\115") local go = oq:NewSection("\65\117\116\111\69\103\103\115") go:NewToggle("\66\97\115\105\99\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\66\97\115\105\99\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg1 = true; while wait() do if getgenv().Egg1== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Basic, ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 1, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Basic.Detector.Detector, ["\73\115\108\97\110\100"] = "\76\111\98\98\121", ["\101\103\103\78\97\109\101"] = "\66\97\115\105\99", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 250 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\66\97\115\105\99\32\69\103\103\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg1 = false; end end) go:NewToggle("\69\97\114\116\104\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\69\97\114\116\104\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg2 = true; while wait() do if getgenv().Egg2== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Earth, ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 2, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Earth.Detector.Detector, ["\73\115\108\97\110\100"] = "\76\111\98\98\121", ["\101\103\103\78\97\109\101"] = "\69\97\114\116\104", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 2500 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\69\97\114\116\104\32\69\103\103\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg2 = false; end end) go:NewToggle("\83\117\110\32\71\111\100\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\83\117\110\32\71\111\100\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg3 = true; while wait() do if getgenv().Egg3== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\83\117\110\32\71\111\100"], ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 3, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\83\117\110\32\71\111\100"].Detector.Detector, ["\73\115\108\97\110\100"] = "\76\111\98\98\121", ["\101\103\103\78\97\109\101"] = "\83\117\110\32\71\111\100", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 1500000 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\83\117\110\32\71\111\100\32\69\103\103\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg3 = false; end end) go:NewToggle("\70\114\111\122\101\110\32\65\114\116\105\99\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\70\114\111\122\101\110\32\65\114\116\105\99\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg4 = true; while wait() do if getgenv().Egg4== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\70\114\111\122\101\110\32\65\114\99\116\105\99"], ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 4, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\70\114\111\122\101\110\32\65\114\99\116\105\99"].Detector.Detector, ["\73\115\108\97\110\100"] = "\73\99\101", ["\101\103\103\78\97\109\101"] = "\70\114\111\122\101\110\32\65\114\99\116\105\99", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 25000000 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\70\114\111\122\101\110\32\65\114\116\105\99\32\69\103\103\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg4 = false; end end) go:NewToggle("\76\97\118\97\32\68\114\97\103\111\110\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\76\97\118\97\32\68\114\97\103\111\110\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg5 = true; while wait() do if getgenv().Egg5== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\76\97\118\97\32\68\114\97\103\111\110"], ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 5, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\76\97\118\97\32\68\114\97\103\111\110"].Detector.Detector, ["\73\115\108\97\110\100"] = "\76\97\118\97", ["\101\103\103\78\97\109\101"] = "\76\97\118\97\32\68\114\97\103\111\110", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 2000000000 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\76\97\118\97\32\68\114\97\103\111\110\32\69\103\103\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg5 = false; end end) go:NewToggle("\84\114\101\97\115\117\114\101\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\84\114\101\97\115\117\114\101\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg6 = true; while wait() do if getgenv().Egg6== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Treasure, ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 6, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Treasure.Detector.Detector, ["\73\115\108\97\110\100"] = "\80\105\114\97\116\101", ["\101\103\103\78\97\109\101"] = "\84\114\101\97\115\117\114\101", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 65000000000 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\84\114\101\97\115\117\114\101\32\69\103\103\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg6 = false; end end) go:NewToggle("\83\112\97\99\101\32\71\117\97\114\100\105\97\110\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\83\112\97\99\101\32\71\117\97\114\100\105\97\110\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg7 = true; while wait() do if getgenv().Egg7== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\83\112\97\99\101\32\71\117\97\114\100\105\97\110"], ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 7, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\83\112\97\99\101\32\71\117\97\114\100\105\97\110"].Detector.Detector, ["\73\115\108\97\110\100"] = "\83\112\97\99\101", ["\101\103\103\78\97\109\101"] = "\83\112\97\99\101\32\71\117\97\114\100\105\97\110", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 3750000000000 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\83\112\97\99\101\32\71\117\97\114\100\105\97\110\32\69\103\103\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg7 = false; end end) go:NewToggle("\84\114\101\101\76\97\110\100\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\84\114\101\101\76\97\110\100\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg8 = true; while wait() do if getgenv().Egg8== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Treeland, ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 8, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Treeland.Detector.Detector, ["\73\115\108\97\110\100"] = "\70\111\114\101\115\116", ["\101\103\103\78\97\109\101"] = "\84\114\101\101\108\97\110\100", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 1e+14 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\84\114\101\101\76\97\110\100\32\69\103\103\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg8 = false; end end) go:NewToggle("\73\99\101\32\67\114\101\97\109\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\73\99\101\32\67\114\101\97\109\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg9 = true; while wait() do if getgenv().Egg9== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\73\99\101\32\67\114\101\97\109"], ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 9, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs["\73\99\101\32\67\114\101\97\109"].Detector.Detector, ["\73\115\108\97\110\100"] = "\67\97\110\100\121\108\97\110\100", ["\101\103\103\78\97\109\101"] = "\73\99\101\32\67\114\101\97\109", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 1.9e+15 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\73\99\101\32\67\114\101\97\109\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg9 = false; end end) go:NewToggle("\65\116\108\97\110\116\105\115\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\65\116\108\97\110\116\105\115\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg10 = true; while wait() do if getgenv().Egg10== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Atlantis, ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 10, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Atlantis.Detector.Detector, ["\73\115\108\97\110\100"] = "\65\116\108\97\110\116\105\115", ["\101\103\103\78\97\109\101"] = "\65\116\108\97\110\116\105\115", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 6.2e+16 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\65\116\108\97\110\116\105\115\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg10 = false; end end) go:NewToggle("\84\114\111\112\105\99\97\108\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\84\114\111\112\105\99\97\108\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg11 = true; while wait() do if getgenv().Egg11== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Tropical, ["\97\99\116\105\118\101"] = false, ["\79\114\100\101\114"] = 11, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Tropical.Detector.Detector, ["\73\115\108\97\110\100"] = "\84\114\111\112\105\99\97\108", ["\101\103\103\78\97\109\101"] = "\84\114\111\112\105\99\97\108", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 1.1e+21 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\84\114\111\112\105\99\97\108\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg11 = false; end end) go:NewToggle("\66\101\101\32\69\103\103", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\66\101\101\32\69\103\103\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Egg12 = true; while wait() do if getgenv().Egg12== true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["\69\103\103"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Bee, ["\97\99\116\105\118\101"] = true, ["\79\114\100\101\114"] = 12, ["\100\101\116\101\99\116\111\114"] = game:GetService("\87\111\114\107\115\112\97\99\101").Eggs.Bee.Detector.Detector, ["\73\115\108\97\110\100"] = "\66\101\101", ["\101\103\103\78\97\109\101"] = "\66\101\101", ["\102\114\97\109\101"] = game:GetService("\80\108\97\121\101\114\115").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["\99\111\115\116"] = 4.8e+23 }, false) end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\66\101\101\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Egg12 = false; end end) local oq = an_:NewTab("\79\116\104\101\114") local go = oq:NewSection("\65\117\116\111\67\104\101\115\116") go:NewToggle("\82\101\98\105\114\116\104\32\67\104\101\115\116", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\82\101\98\105\116\104\115\32\67\104\101\115\116\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Cs1 = true; while wait() do if getgenv().Cs1 == true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.claimChestReward:InvokeServer("\82\101\98\105\114\116\104\115") end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\82\101\98\105\116\104\115\32\67\104\101\115\116\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Cs1 = false; end end) go:NewToggle("\67\108\105\107\115\32\67\104\101\115\116", "\84\111\103\103\108\101\73\110\102\111", function(l) if l then game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\67\108\105\107\115\32\67\104\101\115\116\32\69\110\97\98\108\101\100"; Duration=1;}) getgenv().Cs2 = true; while wait() do if getgenv().Cs2 == true then game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Events.Client.claimChestReward:InvokeServer("\67\108\105\99\107\115") end end else game.StarterGui:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", {Title="\76\97\103\117\110\115\99\114\105\112\116\115"; Text="\65\117\116\111\32\67\108\105\107\115\32\67\104\101\115\116\32\68\105\115\97\98\108\101\100"; Duration=1;}) getgenv().Cs2 = false; end end) local go = oq:NewSection("\79\112\101\110\71\117\105") go:NewButton("\82\101\98\105\105\114\116\104\83\104\111\112", "\66\117\116\116\111\110\73\110\102\111", function() game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.openFrame:Fire("\114\101\98\105\114\116\104\83\104\111\112") end) go:NewButton("\85\112\103\114\97\100\101\115", "\66\117\116\116\111\110\73\110\102\111", function() game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.openFrame:Fire("\117\112\103\114\97\100\101\115") end) go:NewButton("\80\101\116\32\66\111\111\115\116\115", "\66\117\116\116\111\110\73\110\102\111", function() game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.openFrame:Fire("\112\101\116\66\111\111\115\116\115") end) go:NewButton("\67\114\97\102\116\105\110\103\32\77\97\99\104\105\110\101", "\66\117\116\116\111\110\73\110\102\111", function() game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.openFrame:Fire("\99\114\97\102\116") end) go:NewButton("\82\97\105\110\98\111\119\32\77\97\99\104\105\110\101", "\66\117\116\116\111\110\73\110\102\111", function() game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").Bindable.Client.openFrame:Fire("\114\97\105\110\98\111\119") end) local kf = an_:NewTab("\80\108\97\121\101\114") local rk = kf:NewSection("\80\108\97\121\101\114") rk:NewSlider("\87\97\108\107\115\112\101\101\100", "\67\104\97\110\103\101\115\32\116\104\101\32\119\97\108\107\115\112\101\101\100", 250, 16, function(n_) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = n_ end) rk:NewSlider("\74\117\109\112\112\111\119\101\114", "\67\104\97\110\103\101\115\32\116\104\101\32\106\117\109\112\112\111\119\101\114", 250, 50, function(n_) game.Players.LocalPlayer.Character.Humanoid.JumpPower = n_ end) rk:NewButton("\73\110\102\105\110\105\116\101\32\74\117\109\112", "\66\117\116\116\111\110\73\110\102\111", function() local p = true game:GetService("\85\115\101\114\73\110\112\117\116\83\101\114\118\105\99\101").JumpRequest:connect(function() if p then game:GetService"\80\108\97\121\101\114\115".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("\74\117\109\112\105\110\103") end end) end) local oq = an_:NewTab("\83\101\116\116\105\110\103\115") local go = oq:NewSection("\83\101\116\116\105\110\103\115") go:NewKeybind("\75\101\121\98\105\110\100\84\101\120\116", "\75\101\121\98\105\110\100\73\110\102\111", Enum.KeyCode.F, function() _:ToggleUI() end) local oq = an_:NewTab("\67\114\101\100\105\116\115") local go = oq:NewSection("\67\114\101\100\105\116\115") go:NewLabel("\67\114\101\100\105\116\115\32\116\111\32\76\97\103\117\110\35\54\53\48\51") go:NewLabel("\74\111\105\110\32\111\117\114\32\100\105\115\99\111\114\100\58\100\105\115\99\111\114\100\46\103\103\47\53\89\56\97\119\86\87\119\77\84") end end) end coroutine.wrap(j)() 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("⚡Clicker Simulator!⚡ made by Lagun", "Serpent")
+local Tab = Window:NewTab("Autofarm")
+local Section = Tab:NewSection("AutoClicker")
+Section:NewToggle("Fast auto clicker", "ToggleInfo", function(state)
+	if state then
+		getgenv().sds46 = true;
+
+		while wait() do
+			if getgenv().sds46 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.slowAutoClickerActivate:Fire()
+				game:GetService("ReplicatedStorage").Bindable.Client.slowAutoClickerActivate:Fire()
+			end
+		end
+	else
+		getgenv().sds46 = false;
+	end
+end)
+
+local Section = Tab:NewSection("AutoRebirth")
+Section:NewToggle("1Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB1 = true;
+
+		while wait() do
+			if getgenv().RB1 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1, false, false)
+			end
+		end
+	else
+		getgenv().RB1 = false;
+	end
+end)
+Section:NewToggle("5Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB5 = true;
+
+		while wait() do
+			if getgenv().RB5 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5, false, false)
+			end
+		end
+	else
+		getgenv().RB5 = false;
+	end
+end)
+Section:NewToggle("10Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB10 = true;
+
+		while wait() do
+			if getgenv().RB10 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(10, false, false)
+			end
+		end
+	else
+		getgenv().RB10 = false;
+	end
+end)
+Section:NewToggle("50Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB50 = true;
+
+		while wait() do
+			if getgenv().RB50 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50, false, false)
+			end
+		end
+	else
+		getgenv().RB50 = false;
+	end
+end)
+Section:NewToggle("250Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB250 = true;
+
+		while wait() do
+			if getgenv().RB250 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(250, false, false)
+			end
+		end
+	else
+		getgenv().RB250 = false;
+	end
+end)
+Section:NewToggle("1K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB1000 = true;
+
+		while wait() do
+			if getgenv().RB1000 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1000, false, false)
+			end
+		end
+	else
+		getgenv().RB1000 = false;
+	end
+end)
+Section:NewToggle("5K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB5000 = true;
+
+		while wait() do
+			if getgenv().RB5000 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5000, false, false)
+			end
+		end
+	else
+		getgenv().RB5000 = false;
+	end
+end)
+Section:NewToggle("25K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB25000 = true;
+
+		while wait() do
+			if getgenv().RB25000 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(25000, false, false)
+			end
+		end
+	else
+		getgenv().RB25000 = false;
+	end
+end)
+Section:NewToggle("125K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB12500 = true;
+
+		while wait() do
+			if getgenv().RB12500 == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(12500, false, false)
+			end
+		end
+	else
+		getgenv().RB12500 = false;
+	end
+end)
+Section:NewToggle("500K Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB500K = true;
+
+		while wait() do
+			if getgenv().RB500K == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(500000, false, false)
+			end
+		end
+	else
+		getgenv().RB500K = false;
+	end
+end)
+Section:NewToggle("3M Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB3M = true;
+
+		while wait() do
+			if getgenv().RB3M == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(3000000, false, false)
+			end
+		end
+	else
+		getgenv().RB3M = false;
+	end
+end)
+Section:NewToggle("15M Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15M = true;
+
+		while wait() do
+			if getgenv().RB15M == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(15000000, false, false)
+			end
+		end
+	else
+		getgenv().RB15M = false;
+	end
+end)
+Section:NewToggle("50M Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB50M = true;
+
+		while wait() do
+			if getgenv().RB50M == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50000000, false, false)
+			end
+		end
+	else
+		getgenv().RB50M = false;
+	end
+end)
+Section:NewToggle("250M Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB250M = true;
+
+		while wait() do
+			if getgenv().RB250M == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(250000000, false, false)
+			end
+		end
+	else
+		getgenv().RB250M = false;
+	end
+end)
+Section:NewToggle("1B Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB1B = true;
+
+		while wait() do
+			if getgenv().RB1B == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB1B = false;
+	end
+end)
+Section:NewToggle("5B Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB5B = true;
+
+		while wait() do
+			if getgenv().RB5B == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB5B = false;
+	end
+end)
+Section:NewToggle("25B Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB25B = true;
+
+		while wait() do
+			if getgenv().RB25B == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(25000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB25B = false;
+	end
+end)
+Section:NewToggle("750B Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB750B = true;
+
+		while wait() do
+			if getgenv().RB750B == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(750000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB750B = false;
+	end
+end)
+Section:NewToggle("3.5T Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB3T = true;
+
+		while wait() do
+			if getgenv().RB3T == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(3500000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB3T = false;
+	end
+end)
+Section:NewToggle("20T Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB20T = true;
+
+		while wait() do
+			if getgenv().RB20T == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(20000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB20T = false;
+	end
+end)
+Section:NewToggle("100T Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB100T = true;
+
+		while wait() do
+			if getgenv().RB100T == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(100000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB100T = false;
+	end
+end)
+Section:NewToggle("500T Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB500T = true;
+
+		while wait() do
+			if getgenv().RB500T == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(500000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB500T = false;
+	end
+end)
+Section:NewToggle("15QA Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15QA = true;
+
+		while wait() do
+			if getgenv().RB15QA == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1500000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB15QA = false;
+	end
+end)
+Section:NewToggle("75QA Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB75QA = true;
+
+		while wait() do
+			if getgenv().RB75QA == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(7500000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB75QA = false;
+	end
+end)
+Section:NewToggle("375QA Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB375QA = true;
+
+		while wait() do
+			if getgenv().RB375QA == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(37500000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB375QA = false;
+	end
+end)
+Section:NewToggle("2.5QI Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB25QI = true;
+
+		while wait() do
+			if getgenv().RB25QI == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2500000000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB25QI = false;
+	end
+end)
+Section:NewToggle("15QI Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15QI = true;
+
+		while wait() do
+			if getgenv().RB15QI == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(15000000000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB15QI = false;
+	end
+end)
+Section:NewToggle("75QI Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB75QI = true;
+
+		while wait() do
+			if getgenv().RB75QI == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(75000000000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB75QI = false;
+	end
+end)
+Section:NewToggle("375QI Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB375QI = true;
+
+		while wait() do
+			if getgenv().RB375QI == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(375000000000000000000, false, false)
+			end
+		end
+	else
+		getgenv().RB375QI = false;
+	end
+end)
+Section:NewToggle("2SX Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB2SX = true;
+
+		while wait() do
+			if getgenv().RB2SX == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.e+21, false, false)
+			end
+		end
+	else
+		getgenv().RB2SX = false;
+	end
+end)
+Section:NewToggle("50SX Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB50SX = true;
+
+		while wait() do
+			if getgenv().RB50SX == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(50.e+21, false, false)
+			end
+		end
+	else
+		getgenv().RB50SX = false;
+	end
+end)
+Section:NewToggle("250SX Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB250SX = true;
+
+		while wait() do
+			if getgenv().RB250SX == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.5e+23, false, false)
+			end
+		end
+	else
+		getgenv().RB250SX = false;
+	end
+end)
+Section:NewToggle("1.5SP Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15SP = true;
+
+		while wait() do
+			if getgenv().RB15SP == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1.5e+24, false, false)
+			end
+		end
+	else
+		getgenv().RB15SP = false;
+	end
+end)
+Section:NewToggle("20SP Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB20SP = true;
+
+		while wait() do
+			if getgenv().RB20SP == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.e+25, false, false)
+			end
+		end
+	else
+		getgenv().RB20SP = false;
+	end
+end)
+Section:NewToggle("100SP Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB100SP = true;
+
+		while wait() do
+			if getgenv().RB100SP == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1.e+26, false, false)
+			end
+		end
+	else
+		getgenv().RB100SP = false;
+	end
+end)
+Section:NewToggle("600SP Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB600SP = true;
+
+		while wait() do
+			if getgenv().RB600SP == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(6.e+26, false, false)
+			end
+		end
+	else
+		getgenv().RB600SP = false;
+	end
+end)
+Section:NewToggle("3OC Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB3OC = true;
+
+		while wait() do
+			if getgenv().RB3OC == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(3.e+27, false, false)
+			end
+		end
+	else
+		getgenv().RB3OC = false;
+	end
+end)
+Section:NewToggle("18OC Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB18OC = true;
+
+		while wait() do
+			if getgenv().RB18OC == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1.8e+28, false, false)
+			end
+		end
+	else
+		getgenv().RB18OC = false;
+	end
+end)
+Section:NewToggle("90OC Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB90OC = true;
+
+		while wait() do
+			if getgenv().RB90OC == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(9.e+28, false, false)
+			end
+		end
+	else
+		getgenv().RB90OC = false;
+	end
+end)
+Section:NewToggle("500OC Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB500OC = true;
+
+		while wait() do
+			if getgenv().RB500OC == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(5.e+29, false, false)
+			end
+		end
+	else
+		getgenv().RB500OC = false;
+	end
+end)
+Section:NewToggle("2.5NO Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB25NO = true;
+
+		while wait() do
+			if getgenv().RB25NO == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(2.5e+30, false, false)
+			end
+		end
+	else
+		getgenv().RB25NO = false;
+	end
+end)
+Section:NewToggle("15NO Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB15NO = true;
+
+		while wait() do
+			if getgenv().RB15NO == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(1.5e+31, false, false)
+			end
+		end
+	else
+		getgenv().RB15NO = false;
+	end
+end)
+Section:NewToggle("75NO Rebirth", "ToggleInfo", function(state)
+	if state then
+		getgenv().RB75NO = true;
+
+		while wait() do
+			if getgenv().RB75NO == true then
+				game:GetService("ReplicatedStorage").Events.Client.requestRebirth:FireServer(7.5e+31, false, false)
+			end
+		end
+	else
+		getgenv().RB75NO = false;
+	end
+end)
+local Tab = Window:NewTab("Auto Open Egs")
+local Section = Tab:NewSection("Normal World")
+Section:NewToggle("Frozen Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg1 = true;
+
+		while wait() do
+			if getgenv().Egg1 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Frozen Arctic"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 4, ["detector"] = game:GetService("Workspace").Eggs["Frozen Arctic"].Detector.Detector, ["Island"] = "Ice", ["eggName"] = "Frozen Arctic", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 25000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg1 = false;
+	end
+end)
+Section:NewToggle("Lava dragon Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg2 = true;
+
+		while wait() do
+			if getgenv().Egg2 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Lava Dragon"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 5, ["detector"] = game:GetService("Workspace").Eggs["Lava Dragon"].Detector.Detector, ["Island"] = "Lava", ["eggName"] = "Lava Dragon", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg2 = false;
+	end
+end)
+Section:NewToggle("Treasure Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg3 = true;
+
+		while wait() do
+			if getgenv().Egg3 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treasure, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 6, ["detector"] = game:GetService("Workspace").Eggs.Treasure.Detector.Detector, ["Island"] = "Pirate", ["eggName"] = "Treasure", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 65000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg3 = false;
+	end
+end)
+Section:NewToggle("Space Guardian Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg4 = true;
+
+		while wait() do
+			if getgenv().Egg4 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Space Guardian"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 7, ["detector"] = game:GetService("Workspace").Eggs["Space Guardian"].Detector.Detector, ["Island"] = "Space", ["eggName"] = "Space Guardian", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3750000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg4 = false;
+	end
+end)
+Section:NewToggle("Treeland Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg5 = true;
+
+		while wait() do
+			if getgenv().Egg5 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treeland, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 8, ["detector"] = game:GetService("Workspace").Eggs.Treeland.Detector.Detector, ["Island"] = "Forest", ["eggName"] = "Treeland", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 100000000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg5 = false;
+	end
+end)
+Section:NewToggle("Ice Cream Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg6 = true;
+
+		while wait() do
+			if getgenv().Egg6 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Cream"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 9, ["detector"] = game:GetService("Workspace").Eggs["Ice Cream"].Detector.Detector, ["Island"] = "Candyland", ["eggName"] = "Ice Cream", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1900000000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg6 = false;
+	end
+end)
+Section:NewToggle("Atlantis Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg7 = true;
+
+		while wait() do
+			if getgenv().Egg7 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Atlantis, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 10, ["detector"] = game:GetService("Workspace").Eggs.Atlantis.Detector.Detector, ["Island"] = "Atlantis", ["eggName"] = "Atlantis", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 62000000000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg7 = false;
+	end
+end)
+Section:NewToggle("Tropical Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg8 = true;
+
+		while wait() do
+			if getgenv().Egg8 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
+			end
+		end
+	else
+		getgenv().Egg8 = false;
+	end
+end)
+Section:NewToggle("Tropical Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg9 = true;
+
+		while wait() do
+			if getgenv().Egg9 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
+			end
+		end
+	else
+		getgenv().Egg9 = false;
+	end
+end)
+Section:NewToggle("Galaxy Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg10 = true;
+
+		while wait() do
+			if getgenv().Egg10 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Galaxy, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 13, ["detector"] = game:GetService("Workspace").Eggs.Galaxy.Detector.Detector, ["Island"] = "Galaxy", ["eggName"] = "Galaxy", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.3e+26 }, false)
+			end
+		end
+	else
+		getgenv().Egg10 = false;
+	end
+end)
+local Section = Tab:NewSection("Tech World")
+Section:NewToggle("Tech Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg11 = true;
+
+		while wait() do
+			if getgenv().Egg11 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tech, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 14, ["detector"] = game:GetService("Workspace").Eggs.Tech.Detector.Detector, ["Island"] = "techWorld", ["eggName"] = "Tech", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 4.e+31 }, false)
+			end
+		end
+	else
+		getgenv().Egg11 = false;
+	end
+end)
+Section:NewToggle("Robot Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg12 = true;
+
+		while wait() do
+			if getgenv().Egg12 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Robot, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 15, ["detector"] = game:GetService("Workspace").Eggs.Robot.Detector.Detector, ["Island"] = "Robot", ["eggName"] = "Robot", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+32 }, false)
+			end
+		end
+	else
+		getgenv().Egg12 = false;
+	end
+end)
+Section:NewToggle("Chemical Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg13 = true;
+
+		while wait() do
+			if getgenv().Egg13 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Chemical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 16, ["detector"] = game:GetService("Workspace").Eggs.Chemical.Detector.Detector, ["Island"] = "Chemical", ["eggName"] = "Chemical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+35 }, false)
+			end
+		end
+	else
+		getgenv().Egg13 = false;
+	end
+end)
+Section:NewToggle("Steampunk Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg14 = true;
+
+		while wait() do
+			if getgenv().Egg14 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Steampunk, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 17, ["detector"] = game:GetService("Workspace").Eggs.Steampunk.Detector.Detector, ["Island"] = "Steampunk", ["eggName"] = "Steampunk", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+37 }, false)
+			end
+		end
+	else
+		getgenv().Egg14 = false;
+	end
+end)
+Section:NewToggle("Holographic Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg15 = true;
+
+		while wait() do
+			if getgenv().Egg15 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Holographic, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 18, ["detector"] = game:GetService("Workspace").Eggs.Holographic.Detector.Detector, ["Island"] = "Holographic", ["eggName"] = "Holographic", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+40 }, false)
+			end
+		end
+	else
+		getgenv().Egg15 = false;
+	end
+end)
+Section:NewToggle("Music Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg16 = true;
+
+		while wait() do
+			if getgenv().Egg16 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Music, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 19, ["detector"] = game:GetService("Workspace").Eggs.Music.Detector.Detector, ["Island"] = "Music", ["eggName"] = "Music", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+42 }, false)
+			end
+		end
+	else
+		getgenv().Egg16 = false;
+	end
+end)
+Section:NewToggle("Hacker Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg17 = true;
+
+		while wait() do
+			if getgenv().Egg17 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Hacker, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 20, ["detector"] = game:GetService("Workspace").Eggs.Hacker.Detector.Detector, ["Island"] = "Hacker", ["eggName"] = "Hacker", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2.5e+45 }, false)
+			end
+		end
+	else
+		getgenv().Egg17 = false;
+	end
+end)
+Section:NewToggle("Mars Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg18 = true;
+
+		while wait() do
+			if getgenv().Egg18 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Mars, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 21, ["detector"] = game:GetService("Workspace").Eggs.Mars.Detector.Detector, ["Island"] = "Mars", ["eggName"] = "Mars", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+47 }, false)
+			end
+		end
+	else
+		getgenv().Egg18 = false;
+	end
+end)
+local Section = Tab:NewSection("Travel World")
+Section:NewToggle("Time Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg19 = true;
+
+		while wait() do
+			if getgenv().Egg19 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Time, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 22, ["detector"] = game:GetService("Workspace").Eggs.Time.Detector.Detector, ["Island"] = "timeWorld", ["eggName"] = "Time", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 9.e+55 }, false)
+			end
+		end
+	else
+		getgenv().Egg19 = false;
+	end
+end)
+Section:NewToggle("Dinosaur Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg20 = true;
+
+		while wait() do
+			if getgenv().Egg20 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Dinosaur, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 23, ["detector"] = game:GetService("Workspace").Eggs.Dinosaur.Detector.Detector, ["Island"] = "Dinosaur", ["eggName"] = "Dinosaur", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+59 }, false)
+			end
+		end
+	else
+		getgenv().Egg20 = false;
+	end
+end)
+Section:NewToggle("Ice Age Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg21 = true;
+
+		while wait() do
+			if getgenv().Egg21 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Age"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 25, ["detector"] = game:GetService("Workspace").Eggs["Ice Age"].Detector.Detector, ["Island"] = "Ice Age", ["eggName"] = "Ice Age", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.e+62 }, false)
+			end
+		end
+	else
+		getgenv().Egg21 = false;
+	end
+end)
+Section:NewToggle("Samurai Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg23 = true;
+
+		while wait() do
+			if getgenv().Egg23 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Samurai, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 25, ["detector"] = game:GetService("Workspace").Eggs.Samurai.Detector.Detector, ["Island"] = "Samurai", ["eggName"] = "Samurai", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3.75e+62 }, false)
+			end
+		end
+	else
+		getgenv().Egg23 = false;
+	end
+end)
+local Section = Tab:NewSection("Event eggs")
+Section:NewToggle("Easter Egg", "ToggleInfo", function(state)
+	if state then
+		getgenv().Egg22 = true;
+
+		while wait() do
+			if getgenv().Egg22 == true then
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Easter Event"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["detector"] = game:GetService("Workspace").Eggs["Easter Event"].Detector.Detector, ["Island"] = "Lobby", ["canAutoDelete"] = true, ["eggName"] = "Easter Event", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 250000000000000 }, false)
+			end
+		end
+	else
+		getgenv().Egg22 = false;
+	end
+end)
+local Tab = Window:NewTab("Other")
+local Section = Tab:NewSection("Auto rewards")
+Section:NewToggle("Rebirth Chest", "ToggleInfo", function(state)
+	if state then
+		getgenv().rew1 = true;
+
+		while wait() do
+			if getgenv().rew1 == true then
+				game:GetService("ReplicatedStorage").Events.Client.claimChestReward:InvokeServer("Rebirths")
+			end
+		end
+	else
+		getgenv().rew1 = false;
+	end
+end)
+Section:NewToggle("Tech World Clicks Chest", "ToggleInfo", function(state)
+	if state then
+		getgenv().rew2 = true;
+
+		while wait() do
+			if getgenv().rew2 == true then
+				game:GetService("ReplicatedStorage").Events.Client.claimChestReward:InvokeServer("Tech World Clicks")
+			end
+		end
+	else
+		getgenv().rew2 = false;
+	end
+end)
+Section:NewToggle("Travel World Clicks Chest", "ToggleInfo", function(state)
+	if state then
+		getgenv().rewa2 = true;
+
+		while wait() do
+			if getgenv().rewa2 == true then
+				game:GetService("ReplicatedStorage").Events.Client.claimChestReward:InvokeServer("Time World Clicks")
+			end
+		end
+	else
+		getgenv().rewa2 = false;
+	end
+end)
+Section:NewToggle("Spin wheel", "ToggleInfo", function(state)
+	if state then
+		getgenv().rew3 = true;
+
+		while wait() do
+			if getgenv().rew3 == true then
+				game:GetService("ReplicatedStorage").Events.Client.spinWheel:InvokeServer()
+			end
+		end
+	else
+		getgenv().rew3 = false;
+	end
+end)
+Section:NewToggle("Auto Claim Gifts", "ToggleInfo", function(state)
+	if state then
+		getgenv().rew4 = true;
+
+		while wait() do
+			if getgenv().rew4 == true then
+				game:GetService("ReplicatedStorage").Events.Client.collectGifts:FireServer()
+			end
+		end
+	else
+		getgenv().rew4 = false;
+	end
+end)
+local Section = Tab:NewSection("Claim")
+Section:NewButton("Get All boosts", "ButtonInfo", function()
+	for i,v in pairs(game.Players.LocalPlayer.Boosts:GetDescendants()) do
+		if v.Name == "isActive" then
+			v.Value = true
+		end
+	end
+end)
+Section:NewButton("Claim All Codes", "ButtonInfo", function()
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("250KLIKECLICKS")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("225KLIKECODE")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("200KLIKECODE")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("175KLIKELUCK")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("150KCLICKS")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("125KLUCK")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("100KLIKES")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("75KLIKES")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("30klikes")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("20KLIKES")
+	game:GetService("ReplicatedStorage").Events.Client.useTwitterCode:InvokeServer("Freeautohatch")
+
+end)
+Section:NewButton("Verify Twiter", "ButtonInfo", function()
+	game:GetService("ReplicatedStorage").Events.Client.verifyTwitter:InvokeServer("@GamingDan9")
+	game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Successfully verified your Twitter!", true, 5)
+	game:GetService("ReplicatedStorage").Bindable.Client.errorMessage:Fire("Received permanent +10% Luck boost!", true, 5)
+end)
+Section:NewButton("Anti Afk", "ButtonInfo", function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end)
+----Settings
+
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Settings")
+local colors = {
+	SchemeColor = Color3.fromRGB(0,255,255),
+	Background = Color3.fromRGB(0, 0, 0),
+	Header = Color3.fromRGB(0, 0, 0),
+	TextColor = Color3.fromRGB(255,255,255),
+	ElementColor = Color3.fromRGB(20, 20, 20)
+}
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+Section:NewColorPicker("Color Text", "Color Info", Color3.fromRGB(0,0,0), function(color)
+	print(color)
+	-- Second argument is the default color
+end)
+
+
+
+
+---Credits
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Credits")
+Section:NewLabel("Credits to Lagun#6503")
+Section:NewLabel("Dont forget to join discord: discord.gg/Ux55tWTV")
+
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
