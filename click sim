@@ -586,7 +586,7 @@ Section:NewToggle("Frozen Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg1 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Frozen Arctic"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 4, ["detector"] = game:GetService("Workspace").Eggs["Frozen Arctic"].Detector.Detector, ["Island"] = "Ice", ["eggName"] = "Frozen Arctic", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 25000000 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Frozen Arctic"], ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 4, ["detector"] = game:GetService("Workspace").Eggs["Frozen Arctic"].Detector.Detector, ["Island"] = "Ice", ["eggName"] = "Frozen Arctic", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 25000000 }, false)
 			end
 		end
 	else
@@ -599,7 +599,7 @@ Section:NewToggle("Lava dragon Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg2 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Lava Dragon"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 5, ["detector"] = game:GetService("Workspace").Eggs["Lava Dragon"].Detector.Detector, ["Island"] = "Lava", ["eggName"] = "Lava Dragon", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2000000000 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Lava Dragon"], ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 5, ["detector"] = game:GetService("Workspace").Eggs["Lava Dragon"].Detector.Detector, ["Island"] = "Lava", ["eggName"] = "Lava Dragon", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2000000000 }, false)
 			end
 		end
 	else
@@ -612,7 +612,7 @@ Section:NewToggle("Treasure Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg3 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treasure, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 6, ["detector"] = game:GetService("Workspace").Eggs.Treasure.Detector.Detector, ["Island"] = "Pirate", ["eggName"] = "Treasure", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 65000000000 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treasure, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 6, ["detector"] = game:GetService("Workspace").Eggs.Treasure.Detector.Detector, ["Island"] = "Pirate", ["eggName"] = "Treasure", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 65000000000 }, false)
 			end
 		end
 	else
@@ -625,7 +625,7 @@ Section:NewToggle("Space Guardian Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg4 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Space Guardian"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 7, ["detector"] = game:GetService("Workspace").Eggs["Space Guardian"].Detector.Detector, ["Island"] = "Space", ["eggName"] = "Space Guardian", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3750000000000 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Space Guardian"], ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 7, ["detector"] = game:GetService("Workspace").Eggs["Space Guardian"].Detector.Detector, ["Island"] = "Space", ["eggName"] = "Space Guardian", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3750000000000 }, false)
 			end
 		end
 	else
@@ -638,7 +638,7 @@ Section:NewToggle("Treeland Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg5 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treeland, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 8, ["detector"] = game:GetService("Workspace").Eggs.Treeland.Detector.Detector, ["Island"] = "Forest", ["eggName"] = "Treeland", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 100000000000000 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Treeland, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 8, ["detector"] = game:GetService("Workspace").Eggs.Treeland.Detector.Detector, ["Island"] = "Forest", ["eggName"] = "Treeland", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 100000000000000 }, false)
 			end
 		end
 	else
@@ -651,7 +651,7 @@ Section:NewToggle("Ice Cream Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg6 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Cream"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 9, ["detector"] = game:GetService("Workspace").Eggs["Ice Cream"].Detector.Detector, ["Island"] = "Candyland", ["eggName"] = "Ice Cream", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1900000000000000 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Cream"], ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 9, ["detector"] = game:GetService("Workspace").Eggs["Ice Cream"].Detector.Detector, ["Island"] = "Candyland", ["eggName"] = "Ice Cream", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1900000000000000 }, false)
 			end
 		end
 	else
@@ -664,7 +664,7 @@ Section:NewToggle("Atlantis Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg7 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Atlantis, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 10, ["detector"] = game:GetService("Workspace").Eggs.Atlantis.Detector.Detector, ["Island"] = "Atlantis", ["eggName"] = "Atlantis", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 62000000000000000 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Atlantis, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 10, ["detector"] = game:GetService("Workspace").Eggs.Atlantis.Detector.Detector, ["Island"] = "Atlantis", ["eggName"] = "Atlantis", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 62000000000000000 }, false)
 			end
 		end
 	else
@@ -677,7 +677,7 @@ Section:NewToggle("Tropical Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg8 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
 			end
 		end
 	else
@@ -690,7 +690,7 @@ Section:NewToggle("Tropical Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg9 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tropical, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 11, ["detector"] = game:GetService("Workspace").Eggs.Tropical.Detector.Detector, ["Island"] = "Tropical", ["eggName"] = "Tropical", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.1e+21 }, false)
 			end
 		end
 	else
@@ -703,7 +703,7 @@ Section:NewToggle("Galaxy Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg10 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Galaxy, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 13, ["detector"] = game:GetService("Workspace").Eggs.Galaxy.Detector.Detector, ["Island"] = "Galaxy", ["eggName"] = "Galaxy", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.3e+26 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Galaxy, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 13, ["detector"] = game:GetService("Workspace").Eggs.Galaxy.Detector.Detector, ["Island"] = "Galaxy", ["eggName"] = "Galaxy", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.3e+26 }, false)
 			end
 		end
 	else
@@ -717,7 +717,7 @@ Section:NewToggle("Tech Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg11 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tech, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 14, ["detector"] = game:GetService("Workspace").Eggs.Tech.Detector.Detector, ["Island"] = "techWorld", ["eggName"] = "Tech", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 4.e+31 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Tech, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 14, ["detector"] = game:GetService("Workspace").Eggs.Tech.Detector.Detector, ["Island"] = "techWorld", ["eggName"] = "Tech", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 4.e+31 }, false)
 			end
 		end
 	else
@@ -730,7 +730,7 @@ Section:NewToggle("Robot Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg12 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Robot, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 15, ["detector"] = game:GetService("Workspace").Eggs.Robot.Detector.Detector, ["Island"] = "Robot", ["eggName"] = "Robot", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+32 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Robot, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 15, ["detector"] = game:GetService("Workspace").Eggs.Robot.Detector.Detector, ["Island"] = "Robot", ["eggName"] = "Robot", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+32 }, false)
 			end
 		end
 	else
@@ -743,7 +743,7 @@ Section:NewToggle("Chemical Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg13 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Chemical, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 16, ["detector"] = game:GetService("Workspace").Eggs.Chemical.Detector.Detector, ["Island"] = "Chemical", ["eggName"] = "Chemical", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+35 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Chemical, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 16, ["detector"] = game:GetService("Workspace").Eggs.Chemical.Detector.Detector, ["Island"] = "Chemical", ["eggName"] = "Chemical", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+35 }, false)
 			end
 		end
 	else
@@ -756,7 +756,7 @@ Section:NewToggle("Steampunk Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg14 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Steampunk, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 17, ["detector"] = game:GetService("Workspace").Eggs.Steampunk.Detector.Detector, ["Island"] = "Steampunk", ["eggName"] = "Steampunk", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+37 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Steampunk, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 17, ["detector"] = game:GetService("Workspace").Eggs.Steampunk.Detector.Detector, ["Island"] = "Steampunk", ["eggName"] = "Steampunk", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+37 }, false)
 			end
 		end
 	else
@@ -769,7 +769,7 @@ Section:NewToggle("Holographic Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg15 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Holographic, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 18, ["detector"] = game:GetService("Workspace").Eggs.Holographic.Detector.Detector, ["Island"] = "Holographic", ["eggName"] = "Holographic", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+40 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Holographic, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 18, ["detector"] = game:GetService("Workspace").Eggs.Holographic.Detector.Detector, ["Island"] = "Holographic", ["eggName"] = "Holographic", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+40 }, false)
 			end
 		end
 	else
@@ -782,7 +782,7 @@ Section:NewToggle("Music Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg16 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Music, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 19, ["detector"] = game:GetService("Workspace").Eggs.Music.Detector.Detector, ["Island"] = "Music", ["eggName"] = "Music", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+42 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Music, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 19, ["detector"] = game:GetService("Workspace").Eggs.Music.Detector.Detector, ["Island"] = "Music", ["eggName"] = "Music", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+42 }, false)
 			end
 		end
 	else
@@ -795,7 +795,7 @@ Section:NewToggle("Hacker Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg17 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Hacker, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 20, ["detector"] = game:GetService("Workspace").Eggs.Hacker.Detector.Detector, ["Island"] = "Hacker", ["eggName"] = "Hacker", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2.5e+45 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Hacker, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 20, ["detector"] = game:GetService("Workspace").Eggs.Hacker.Detector.Detector, ["Island"] = "Hacker", ["eggName"] = "Hacker", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 2.5e+45 }, false)
 			end
 		end
 	else
@@ -808,7 +808,7 @@ Section:NewToggle("Mars Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg18 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Mars, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 21, ["detector"] = game:GetService("Workspace").Eggs.Mars.Detector.Detector, ["Island"] = "Mars", ["eggName"] = "Mars", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+47 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Mars, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 21, ["detector"] = game:GetService("Workspace").Eggs.Mars.Detector.Detector, ["Island"] = "Mars", ["eggName"] = "Mars", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 5.e+47 }, false)
 			end
 		end
 	else
@@ -822,7 +822,7 @@ Section:NewToggle("Time Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg19 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Time, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 22, ["detector"] = game:GetService("Workspace").Eggs.Time.Detector.Detector, ["Island"] = "timeWorld", ["eggName"] = "Time", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 9.e+55 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Time, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 22, ["detector"] = game:GetService("Workspace").Eggs.Time.Detector.Detector, ["Island"] = "timeWorld", ["eggName"] = "Time", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 9.e+55 }, false)
 			end
 		end
 	else
@@ -835,7 +835,7 @@ Section:NewToggle("Dinosaur Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg20 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Dinosaur, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 23, ["detector"] = game:GetService("Workspace").Eggs.Dinosaur.Detector.Detector, ["Island"] = "Dinosaur", ["eggName"] = "Dinosaur", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+59 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Dinosaur, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 23, ["detector"] = game:GetService("Workspace").Eggs.Dinosaur.Detector.Detector, ["Island"] = "Dinosaur", ["eggName"] = "Dinosaur", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.5e+59 }, false)
 			end
 		end
 	else
@@ -848,7 +848,7 @@ Section:NewToggle("Ice Age Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg21 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Age"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 25, ["detector"] = game:GetService("Workspace").Eggs["Ice Age"].Detector.Detector, ["Island"] = "Ice Age", ["eggName"] = "Ice Age", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.e+62 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Ice Age"], ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 25, ["detector"] = game:GetService("Workspace").Eggs["Ice Age"].Detector.Detector, ["Island"] = "Ice Age", ["eggName"] = "Ice Age", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 1.e+62 }, false)
 			end
 		end
 	else
@@ -861,7 +861,7 @@ Section:NewToggle("Samurai Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg23 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Samurai, ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 25, ["detector"] = game:GetService("Workspace").Eggs.Samurai.Detector.Detector, ["Island"] = "Samurai", ["eggName"] = "Samurai", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3.75e+62 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs.Samurai, ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["Order"] = 25, ["detector"] = game:GetService("Workspace").Eggs.Samurai.Detector.Detector, ["Island"] = "Samurai", ["eggName"] = "Samurai", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 3.75e+62 }, false)
 			end
 		end
 	else
@@ -875,7 +875,7 @@ Section:NewToggle("Easter Egg", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().Egg22 == true then
-				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Easter Event"], ["petsBG"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["detector"] = game:GetService("Workspace").Eggs["Easter Event"].Detector.Detector, ["Island"] = "Lobby", ["canAutoDelete"] = true, ["eggName"] = "Easter Event", ["frame"] = game:GetService("Players").gamepro3211.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 250000000000000 }, false)
+				game:GetService("ReplicatedStorage").Bindable.Client.eggOpen.openEggEvent:Fire(false, { ["Egg"] = game:GetService("Workspace").Eggs["Easter Event"], ["petsBG"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate.background, ["active"] = false, ["detector"] = game:GetService("Workspace").Eggs["Easter Event"].Detector.Detector, ["Island"] = "Lobby", ["canAutoDelete"] = true, ["eggName"] = "Easter Event", ["frame"] = game:GetService("Players").LocalPlayer.PlayerGui.eggOpenUI.moverBG.background.petsTemplate, ["cost"] = 250000000000000 }, false)
 			end
 		end
 	else
@@ -942,7 +942,14 @@ Section:NewToggle("Auto Claim Gifts", "ToggleInfo", function(state)
 
 		while wait() do
 			if getgenv().rew4 == true then
+
+				game:GetService("ReplicatedStorage").Bindable.Client.exitFrame:Fire("randomGift")
+				game:GetService("ReplicatedStorage").Bindable.Client.toggleGiftBlur:Fire(0)
+				game:GetService("ReplicatedStorage").Bindable.Client.toggleMenuBlur:Fire(0)
 				game:GetService("ReplicatedStorage").Events.Client.collectGifts:FireServer()
+				game:GetService("ReplicatedStorage").Bindable.Client.Button1Up:Fire()
+				game:GetService("ReplicatedStorage").Bindable.Client.totalMultiplierUpdated:Fire()
+				game:GetService("ReplicatedStorage").Bindable.Client.totalPerSecondBonusUpdated:Fire()
 			end
 		end
 	else
